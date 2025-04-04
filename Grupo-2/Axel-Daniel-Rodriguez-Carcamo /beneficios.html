@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficios de la Hipertrofia Muscular</title>
+    <style>
+        /* Estilos consistentes con las demás páginas */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff4b2b, #ff6f61, #ff4b2b);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            background-color: #ff4b2b;
+            padding: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #ffab91;
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px 80px;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            margin: 30px 0;
+            border-left: 5px solid #ff6f61;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .card h2 {
+            color: #ff6f61;
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .card h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #ff6f61, transparent);
+        }
+
+        .card h3 {
+            color: #ff8a65;
+            margin: 25px 0 15px;
+            font-size: 1.6rem;
+        }
+
+        .card p, .card ul, .card li {
+            font-size: 1.1rem;
+            margin-top: 12px;
+        }
+
+        .card ul {
+            padding-left: 30px;
+        }
+
+        .card li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .card li::before {
+            content: '•';
+            color: #ff6f61;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -3px;
+        }
+
+        .highlight {
+            background: linear-gradient(90deg, #333, #2a2a2a);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #ff6f61;
+            margin: 25px 0;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .benefit-card {
+            background: linear-gradient(145deg, #2a2a2a, #222);
+            padding: 20px;
+            border-radius: 10px;
+            border-top: 4px solid #ff6f61;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .benefit-card h3 {
+            color: #ff8a65;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .content-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 3px solid #ff6f61;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-float-right {
+            float: right;
+            width: 45%;
+            margin: 0 0 20px 20px;
+        }
+
+        .image-float-left {
+            float: left;
+            width: 45%;
+            margin: 0 20px 20px 0;
+        }
+
+        footer {
+            background: linear-gradient(90deg, #222, #333, #222);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        footer a {
+            color: #ffab91;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ff6f61;
+            text-decoration: underline;
+        }
+
+        /* Animaciones */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            
+            nav a {
+                margin: 0 10px;
+                font-size: 1rem;
+                padding: 5px;
+            }
+            
+            .benefit-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+            
+            .image-float-right,
+            .image-float-left {
+                float: none;
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            nav {
+                padding: 8px;
+            }
+            
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Beneficios de la Hipertrofia Muscular</h1>
+    </header>
+
+    <nav>
+        <a href="Hipertrofia.html">Inicio</a>
+        <a href="beneficios.html">Beneficios</a>
+        <a href="entrenamientos.html">Entrenamientos</a>
+        <a href="nutricion.html">Nutrición</a>
+    </nav>
+
+    <div class="content">
+        <!-- Imagen principal integrada con el texto -->
+        <div class="card fade-in">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+                 alt="Persona mostrando su desarrollo muscular" 
+                 class="content-image fade-in">
+            
+            <h2>Beneficios Integrales del Desarrollo Muscular</h2>
+            <p>La hipertrofia muscular va mucho más allá de la estética. El desarrollo muscular controlado y saludable impacta positivamente en todos los aspectos de tu vida, desde lo físico hasta lo mental y emocional.</p>
+            
+            <div class="highlight">
+                <p><strong>Dato clave:</strong> Por cada kilogramo de masa muscular ganada, tu cuerpo quema aproximadamente 50-100 kcal adicionales por día en reposo. Esto significa que desarrollar músculo es una de las mejores inversiones a largo plazo para tu metabolismo.</p>
+            </div>
+        </div>
+        
+        <div class="card fade-in">
+            <h2>Beneficios Físicos de la Hipertrofia</h2>
+            
+            <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                 alt="Músculos en acción durante el ejercicio" 
+                 class="image-float-right fade-in">
+            
+            <h3>Mejoras en la Salud Metabólica</h3>
+            <ul>
+                <li><strong>Mayor sensibilidad a la insulina:</strong> Reduce el riesgo de diabetes tipo 2</li>
+                <li><strong>Mejor control glucémico:</strong> Los músculos actúan como reservorios de glucógeno</li>
+                <li><strong>Metabolismo basal elevado:</strong> Quemas más calorías incluso en reposo</li>
+                <li><strong>Mejor composición corporal:</strong> Mayor proporción de masa magra vs grasa</li>
+            </ul>
+            
+            <h3>Beneficios Articulares y Posturales</h3>
+            <ul>
+                <li><strong>Protección articular:</strong> Los músculos fuertes absorben impactos</li>
+                <li><strong>Mejor alineación postural:</strong> Corrige desbalances musculares</li>
+                <li><strong>Reducción de dolores crónicos:</strong> Especialmente en espalda y rodillas</li>
+                <li><strong>Mayor densidad ósea:</strong> Previene osteoporosis</li>
+            </ul>
+        </div>
+        
+        <div class="card fade-in">
+            <h2>Beneficios Mentales y Emocionales</h2>
+            
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                 alt="Persona feliz después de entrenar" 
+                 class="image-float-left fade-in">
+            
+            <div class="benefit-grid">
+                <div class="benefit-card">
+                    <h3>Salud Mental</h3>
+                    <ul>
+                        <li>Liberación de endorfinas (hormonas del bienestar)</li>
+                        <li>Reducción del estrés y ansiedad</li>
+                        <li>Mejor calidad del sueño</li>
+                        <li>Disminución de síntomas depresivos</li>
+                    </ul>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Autoestima y Confianza</h3>
+                    <ul>
+                        <li>Mejor imagen corporal</li>
+                        <li>Mayor seguridad en uno mismo</li>
+                        <li>Sensación de logro y superación</li>
+                        <li>Desarrollo de disciplina personal</li>
+                    </ul>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Funciones Cognitivas</h3>
+                    <ul>
+                        <li>Mejor memoria y concentración</li>
+                        <li>Mayor irrigación cerebral</li>
+                        <li>Reducción del riesgo de demencia</li>
+                        <li>Mejor capacidad de aprendizaje</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card fade-in">
+            <h2>Beneficios a Largo Plazo</h2>
+            
+            <div class="highlight">
+                <p><strong>Inversión en salud futura:</strong> La masa muscular ganada en la juventud y mantenida con los años es el mejor predictor de calidad de vida en la vejez.</p>
+            </div>
+            
+            <h3>Envejecimiento Saludable</h3>
+            <ul>
+                <li><strong>Independencia física:</strong> Mayor capacidad para actividades diarias</li>
+                <li><strong>Prevención de sarcopenia:</strong> Pérdida muscular asociada a la edad</li>
+                <li><strong>Menor riesgo de caídas:</strong> Mejor equilibrio y coordinación</li>
+                <li><strong>Recuperación más rápida:</strong> De enfermedades y cirugías</li>
+            </ul>
+            
+            <h3>Expectativa de Vida</h3>
+            <ul>
+                <li><strong>Reducción de mortalidad:</strong> Por todas las causas</li>
+                <li><strong>Menor riesgo cardiovascular:</strong> Presión arterial más estable</li>
+                <li><strong>Mejor función inmunológica:</strong> Defensas más fuertes</li>
+                <li><strong>Longevidad aumentada:</strong> Hasta 7 años más de vida saludable</li>
+            </ul>
+            
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+                 alt="Persona mayor haciendo ejercicio" 
+                 class="content-image fade-in">
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Hipertrofia Muscular | <a href="#">Contactar</a> | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Uso</a></p>
+    </footer>
+
+    <script>
+        // Efecto fade-in mejorado al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeInObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            fadeElements.forEach(el => {
+                fadeInObserver.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>

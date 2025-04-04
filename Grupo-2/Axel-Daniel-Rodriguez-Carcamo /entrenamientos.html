@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenamientos para Hipertrofia</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        nav {
+            background-color: #ff4b2b;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffab91;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            padding-bottom: 80px; /* Para evitar que el footer tape contenido */
+        }
+
+        .main-content {
+            width: 100%;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+        }
+
+        .card h2 {
+            color: #ff6f61;
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+
+        .card h3 {
+            color: #ff8a65;
+            margin: 20px 0 10px;
+            font-size: 1.5rem;
+        }
+
+        .card p, .card ul, .card li {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .card ul {
+            padding-left: 30px;
+        }
+
+        .card li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background-color: #333;
+            padding: 15px;
+            border-left: 4px solid #ff6f61;
+            margin: 15px 0;
+        }
+
+        .image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #ffab91;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animaciones */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                margin: 10px;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            nav a {
+                margin: 0 10px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Entrenamientos para la Hipertrofia</h1>
+    </header>
+
+    <nav>
+        <a href="Hipertrofia.html">Inicio</a>
+        <a href="beneficios.html">Beneficios</a>
+        <a href="entrenamientos.html">Entrenamientos</a>
+        <a href="nutricion.html">Nutrición</a>
+    </nav>
+
+    <div class="content">
+        <div class="main-content">
+            <img src="imagen2.jpg" alt="Entrenamiento de hipertrofia" class="image fade-in">
+            
+            <div class="card fade-in">
+                <h2>Principios Clave para la Hipertrofia</h2>
+                <p>Para maximizar el crecimiento muscular, debes aplicar estos principios científicos:</p>
+                
+                <ul>
+                    <li><strong>Resistencia progresiva:</strong> Aumentar gradualmente el peso, las repeticiones o el volumen de entrenamiento.</li>
+                    <li><strong>Tensión mecánica:</strong> Usar cargas moderadas a pesadas (70-85% de tu 1RM) para estimular las fibras musculares.</li>
+                    <li><strong>Daño muscular controlado:</strong> Ejercicios excéntricos (fase negativa) y rangos completos de movimiento.</li>
+                    <li><strong>Fatiga metabólica:</strong> Series cercanas al fallo muscular (pero no siempre llegar a él).</li>
+                    <li><strong>Frecuencia óptima:</strong> Entrenar cada grupo muscular 2-3 veces por semana.</li>
+                </ul>
+            </div>
+            
+            <div class="card fade-in">
+                <h2>Selección de Ejercicios</h2>
+                <p>Prioriza <strong>movimientos compuestos</strong> (multiarticulares) y complementa con ejercicios de aislamiento.</p>
+                
+                <h3>Ejercicios Clave (Compuestos)</h3>
+                <ul>
+                    <li><strong>Sentadillas</strong> (Barra, goblet, búlgaras) → Cuádriceps, glúteos, core.</li>
+                    <li><strong>Press de Banca</strong> (Barra, mancuernas, inclinado) → Pectoral, hombros, tríceps.</li>
+                    <li><strong>Peso Muerto</strong> (Convencional, rumano, sumo) → Espalda baja, isquios, glúteos.</li>
+                    <li><strong>Dominadas/Remo con Barra</strong> → Dorsales, bíceps, trapecio.</li>
+                    <li><strong>Press Militar</strong> → Hombros, tríceps.</li>
+                </ul>
+                
+                <h3>Ejercicios de Aislamiento (Accesorios)</h3>
+                <ul>
+                    <li><strong>Curl de Bíceps</strong> (Barra/mancuernas) → Bíceps.</li>
+                    <li><strong>Extensiones de Tríceps</strong> (Fondos, polea) → Tríceps.</li>
+                    <li><strong>Elevaciones Laterales</strong> → Deltoides laterales.</li>
+                    <li><strong>Prensa de Piernas</strong> → Cuádriceps/glúteos (alternativa a sentadillas pesadas).</li>
+                </ul>
+            </div>
+            
+            <div class="card fade-in">
+                <h2>Esquema de Series y Repeticiones</h2>
+                <ul>
+                    <li><strong>Rango ideal para hipertrofia:</strong> 6-12 repeticiones por serie.</li>
+                    <li><strong>Volumen semanal por grupo muscular:</strong> 10-20 series (principiantes: 10-12; avanzados: 15-20).</li>
+                    <li><strong>Descanso entre series:</strong> 60-90 segundos (ejercicios de aislamiento: 45-60s).</li>
+                </ul>
+                
+                <div class="highlight">
+                    <h3>Ejemplo de Rutina (4 días)</h3>
+                    <p><strong>Día Piernas:</strong> Sentadillas 4x8-10, Peso Muerto 3x6-8, Prensa 3x10-12</p>
+                    <p><strong>Día Empuje:</strong> Press Banca 4x8-10, Press Militar 3x8-12, Fondos 3xAMRAP</p>
+                    <p><strong>Día Tirón:</strong> Dominadas 4x6-8, Remo con Barra 3x8-10, Face Pull 3x12-15</p>
+                    <p><strong>Día Accesorios:</strong> Curl Bíceps 3x10-12, Extensiones Tríceps 3x12-15, Abdominales 3x15-20</p>
+                </div>
+            </div>
+            
+            <div class="card fade-in">
+                <h2>Progresión de Carga</h2>
+                <p>Para seguir creciendo, aplica estos métodos:</p>
+                <ul>
+                    <li><strong>Aumento de peso:</strong> Sube 2.5-5 kg cuando completes todas las repeticiones con buena forma.</li>
+                    <li><strong>Aumento de repeticiones:</strong> Si llegas a 12 repeticiones fácilmente, sube el peso.</li>
+                    <li><strong>Técnicas de intensidad:</strong>
+                        <ul>
+                            <li>Drop Sets (bajar peso tras el fallo).</li>
+                            <li>Rest-Pause (pausas cortas para más repeticiones).</li>
+                            <li>Repeticiones excéntricas (enfocarse en la fase negativa).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="card fade-in">
+                <h2>Nutrición y Descanso</h2>
+                <ul>
+                    <li><strong>Proteína:</strong> 1.6-2.2 g/kg de peso corporal (ej: 70 kg → 112-154 g/día).</li>
+                    <li><strong>Superávit calórico:</strong> +300-500 kcal para ganar músculo (sin exceso de grasa).</li>
+                    <li><strong>Descanso:</strong> 7-9 horas de sueño y 48h de recuperación por grupo muscular.</li>
+                </ul>
+                
+                <div class="highlight">
+                    <p><strong>Conclusión:</strong> Combina entrenamiento progresivo, nutrición adecuada y descanso suficiente para maximizar la hipertrofia muscular. ¡La consistencia es clave!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Hipertrofia Muscular | <a href="#">Contactar</a> | <a href="#">Política de Privacidad</a></p>
+    </footer>
+
+    <script>
+        // Efecto fade-in al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => {
+                setTimeout(() => {
+                    el.classList.add('visible');
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>

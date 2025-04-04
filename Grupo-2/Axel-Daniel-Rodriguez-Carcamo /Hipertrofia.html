@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hipertrofia Muscular</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            background-color: #ff4b2b;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #ffab91;
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px 100px;
+        }
+
+        .main-content {
+            width: 68%;
+        }
+
+        .sidebar {
+            width: 30%;
+            background-color: #1e1e1e;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            height: fit-content;
+        }
+
+        .sidebar h2 {
+            font-size: 1.8rem;
+            color: #ff6f61;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ff6f61;
+            padding-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+        }
+
+        .sidebar ul li {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 3px solid #ff6f61;
+            padding-bottom: 10px;
+        }
+
+        .content-image {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            margin: 20px 0;
+            border: 3px solid #ff6f61;
+            transition: transform 0.3s;
+        }
+
+        .content-image:hover {
+            transform: scale(1.01);
+        }
+
+        .image-float-right {
+            float: right;
+            width: 45%;
+            max-height: 300px;
+            margin: 0 0 20px 25px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .image-float-left {
+            float: left;
+            width: 45%;
+            max-height: 300px;
+            margin: 0 25px 20px 0;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+            border-left: 5px solid #ff6f61;
+            transition: transform 0.3s;
+            overflow: hidden; /* Fix para floats */
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #ff6f61;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .card h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: #ff6f61;
+        }
+
+        .card p {
+            font-size: 1.1rem;
+            margin: 15px 0;
+        }
+
+        footer {
+            background: linear-gradient(90deg, #222, #333, #222);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        footer a {
+            color: #ffab91;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ff6f61;
+            text-decoration: underline;
+        }
+
+        /* Animaciones */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Clearfix para contenedores con floats */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .main-content, .sidebar {
+                width: 100%;
+            }
+            
+            .image-float-right,
+            .image-float-left {
+                float: none;
+                width: 100%;
+                margin: 20px 0;
+                max-height: 400px;
+            }
+            
+            header h1 {
+                font-size: 2.2rem;
+            }
+            
+            nav a {
+                margin: 0 10px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            nav {
+                padding: 10px;
+            }
+            
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Todo sobre la Hipertrofia Muscular</h1>
+    </header>
+    <nav>
+        <a href="beneficios.html">Beneficios</a>
+        <a href="entrenamientos.html">Entrenamientos</a>
+        <a href="nutricion.html">Nutrición</a>
+    </nav>
+
+    <div class="content">
+        <div class="main-content">
+            <!-- Imagen hero principal -->
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+                 alt="Persona mostrando desarrollo muscular" 
+                 class="content-image fade-in">
+            
+            <div class="card fade-in clearfix" id="card1">
+                <h2>¿Cómo Funciona la Hipertrofia Muscular?</h2>
+                
+                <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                     alt="Microlesiones musculares" 
+                     class="image-float-right fade-in">
+                
+                <p>La hipertrofia muscular se refiere al aumento del tamaño de las fibras musculares a través del ejercicio y la nutrición. Este proceso ocurre cuando las fibras musculares se someten a un esfuerzo intenso, lo que provoca microlesiones en las fibras.</p>
+                
+                <p>Posteriormente, durante el periodo de recuperación, el cuerpo repara estas microlesiones mediante un proceso biológico complejo que involucra la fusión de células satélite a las fibras musculares dañadas, resultando en fibras más grandes y fuertes.</p>
+                
+                <p>Este mecanismo de adaptación es la forma en que nuestro cuerpo se prepara para manejar mejor futuras demandas similares de ejercicio.</p>
+            </div>
+            
+            <div class="card fade-in clearfix" id="card2">
+                <h2>Factores que Afectan la Hipertrofia</h2>
+                
+                <img src="imagen1.jpg" 
+                alt="Imagen representativa de hipertrofia muscular" 
+                style="width: 100%; max-height: 400px; object-fit: cover; object-position: center; border-radius: 10px; border: 2px solid #ff6f61; box-shadow: 0 4px 8px rgba(0,0,0,0.3); margin: 20px 0;"> 
+                
+                <h3 style="color: #ff8a65; margin-top: 20px;">Entrenamiento</h3>
+                <p>Debe ser progresivo y centrado en ejercicios de resistencia como levantamiento de pesas, que desafíen los músculos. El principio de sobrecarga progresiva es fundamental - gradualmente aumentar el peso, volumen o intensidad para continuar desafiando los músculos.</p>
+                
+                <h3 style="color: #ff8a65;">Nutrición</h3>
+                <p>La proteína es crucial para la reparación muscular (1.6-2.2g por kg de peso corporal), mientras que los carbohidratos proveen energía para los entrenamientos intensos. Las grasas saludables son esenciales para la producción hormonal.</p>
+                
+                <h3 style="color: #ff8a65;">Recuperación</h3>
+                <p>El descanso adecuado (7-9 horas de sueño) permite la reparación de las fibras musculares. Cada grupo muscular necesita 48-72 horas de recuperación entre sesiones intensas para optimizar el crecimiento.</p>
+                
+                <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                     alt="Alimentos para musculación" 
+                     class="image-float-right fade-in" 
+                     style="clear: both; margin-top: 20px;">
+            </div>
+            
+            <div class="card fade-in clearfix" id="card3">
+                <h2>La Importancia del Equilibrio en la Hipertrofia</h2>
+                
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                     alt="Equilibrio en el entrenamiento" 
+                     class="image-float-left fade-in">
+                
+                <p>Para que el proceso de hipertrofia sea efectivo, es esencial mantener un equilibrio entre el entrenamiento, la nutrición y el descanso. Estos tres pilares trabajan en sinergia:</p>
+                
+                <ul style="padding-left: 30px; margin: 15px 0;">
+                    <li style="margin-bottom: 10px;">El entrenamiento proporciona el estímulo para el crecimiento</li>
+                    <li style="margin-bottom: 10px;">La nutrición suministra los materiales de construcción</li>
+                    <li style="margin-bottom: 10px;">El descanso permite que ocurra el proceso de reconstrucción</li>
+                </ul>
+                
+                <p>Un enfoque equilibrado es clave para evitar el sobreentrenamiento (que puede llevar a lesiones o estancamiento) y maximizar los resultados a largo plazo. La paciencia y consistencia son virtudes esenciales en el camino hacia la hipertrofia muscular sostenible.</p>
+                
+                <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                     alt="Descanso y recuperación" 
+                     class="content-image fade-in" 
+                     style="margin-top: 20px;">
+            </div>
+        </div>
+
+        <div class="sidebar fade-in">
+            <h2>Consejos para Aumentar la Hipertrofia</h2>
+            <ul>
+                <li><strong>Varía tu rutina:</strong> Cambiar los ejercicios, ángulos y repeticiones estimula diferentes fibras musculares. Implementa periodización cada 4-6 semanas.</li>
+                
+                <li><strong>Prioriza la proteína:</strong> Consume 1.6-2.2g/kg de peso de fuentes completas como huevos, pollo, pescado y suplementos de calidad.</li>
+                
+                <li><strong>Progresión constante:</strong> Aumenta pesos gradualmente (2-5% semanal) para seguir desafiando a tus músculos. Registra tus entrenamientos.</li>
+                
+                <li><strong>Enfoque en la técnica:</strong> Ejecución correcta previene lesiones y asegura que el músculo objetivo trabaje eficientemente.</li>
+                
+                <li><strong>Descanso activo:</strong> Incluye días de recuperación con movilidad y cardio ligero para mejorar circulación.</li>
+                
+                <li><strong>Hidratación:</strong> Los músculos son 75% agua. Bebe 35ml/kg de peso diariamente para óptima función muscular.</li>
+                
+                <li><strong>Paciencia:</strong> La hipertrofia real toma tiempo. Enfócate en ganar 0.5-1kg de músculo por mes como objetivo realista.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Hipertrofia Muscular | <a href="#">Contactar</a> | <a href="#">Política de Privacidad</a> | <a href="#">Recursos</a></p>
+    </footer>
+
+    <script>
+        // Efecto fade-in mejorado con IntersectionObserver
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            fadeElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrición para la Hipertrofia</title>
+    <style>
+        /* Estilos consistentes con la página anterior */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff4b2b, #ff6f61, #ff4b2b);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            background-color: #ff4b2b;
+            padding: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #ffab91;
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px 80px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+            border: 3px solid #ff6f61;
+            transition: transform 0.3s;
+        }
+
+        .hero-image:hover {
+            transform: scale(1.01);
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            margin: 30px 0;
+            border-left: 5px solid #ff6f61;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .card h2 {
+            color: #ff6f61;
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .card h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #ff6f61, transparent);
+        }
+
+        .card h3 {
+            color: #ff8a65;
+            margin: 25px 0 15px;
+            font-size: 1.6rem;
+        }
+
+        .card p, .card ul, .card li {
+            font-size: 1.1rem;
+            margin-top: 12px;
+        }
+
+        .card ul {
+            padding-left: 30px;
+        }
+
+        .card li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .card li::before {
+            content: '•';
+            color: #ff6f61;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -3px;
+        }
+
+        .highlight {
+            background: linear-gradient(90deg, #333, #2a2a2a);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #ff6f61;
+            margin: 25px 0;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .supplement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .supplement-card {
+            background: linear-gradient(145deg, #2a2a2a, #222);
+            padding: 20px;
+            border-radius: 10px;
+            border-top: 4px solid #ff6f61;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .supplement-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .supplement-card h3 {
+            color: #ff8a65;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .meal-plan {
+            background-color: #252525;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #ff6f61;
+        }
+
+        .meal-plan h3 {
+            color: #ff8a65;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: linear-gradient(90deg, #222, #333, #222);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        footer a {
+            color: #ffab91;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ff6f61;
+            text-decoration: underline;
+        }
+
+        /* Animaciones */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            
+            nav a {
+                margin: 0 10px;
+                font-size: 1rem;
+                padding: 5px;
+            }
+            
+            .hero-image {
+                height: 350px;
+            }
+            
+            .supplement-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            nav {
+                padding: 8px;
+            }
+            
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+            
+            .hero-image {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nutrición para la Hipertrofia Muscular</h1>
+    </header>
+
+    <nav>
+        <a href="Hipertrofia.html">Inicio</a>
+        <a href="beneficios.html">Beneficios</a>
+        <a href="entrenamientos.html">Entrenamientos</a>
+        <a href="nutricion.html">Nutrición</a>
+    </nav>
+
+    <div class="content">
+        <!-- Imagen hero principal con efecto hover -->
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+             alt="Alimentos saludables para ganar masa muscular" 
+             class="hero-image fade-in">
+        
+        <div class="card fade-in">
+            <h2>Fundamentos de la Nutrición para Hipertrofia</h2>
+            <p>La nutrición representa el 70% del éxito en la hipertrofia muscular. Una dieta adecuada optimiza la síntesis de proteínas, la recuperación y el crecimiento muscular post-entrenamiento.</p>
+            
+            <div class="highlight">
+                <p><strong>Regla básica:</strong> Debes consumir más calorías de las que gastas (superávit calórico) para ganar músculo, aproximadamente 300-500 kcal adicionales por día. Este excedente debe venir principalmente de proteínas y carbohidratos de calidad.</p>
+            </div>
+            
+            <p>La ventana anabólica post-entrenamiento es crucial: consume proteínas y carbohidratos dentro de las 2 horas posteriores al ejercicio para maximizar la recuperación muscular.</p>
+        </div>
+        
+        <div class="card fade-in">
+            <h2>Macronutrientes Esenciales</h2>
+            
+            <h3>Proteínas</h3>
+            <ul>
+                <li><strong>Cantidad:</strong> 1.6-2.2 g por kg de peso corporal (ej: 80 kg → 128-176 g/día)</li>
+                <li><strong>Fuentes premium:</strong> Pechuga de pollo, claras de huevo, salmón, carne magra de res, legumbres, proteína de suero de leche</li>
+                <li><strong>Distribución óptima:</strong> 4-6 comidas diarias (20-40g de proteína por comida) para máxima síntesis proteica</li>
+                <li><strong>Momento clave:</strong> 20-40g de proteína rápida (suero) post-entrenamiento</li>
+            </ul>
+            
+            <h3>Carbohidratos</h3>
+            <ul>
+                <li><strong>Cantidad:</strong> 3-5 g por kg de peso corporal (dependiendo de actividad física)</li>
+                <li><strong>Fuentes inteligentes:</strong> Arroz integral, avena, batata, quinoa, frutas bajas en fructosa, vegetales fibrosos</li>
+                <li><strong>Estrategia:</strong> 70% de los carbohidratos alrededor del entrenamiento (pre y post)</li>
+                <li><strong>Beneficio clave:</strong> Reposición de glucógeno muscular y energía para entrenamientos intensos</li>
+            </ul>
+            
+            <h3>Grasas Saludables</h3>
+            <ul>
+                <li><strong>Cantidad:</strong> 0.8-1.2 g por kg de peso corporal</li>
+                <li><strong>Fuentes esenciales:</strong> Aguacate, nueces y almendras, aceite de oliva extra virgen, pescados grasos (salmón, atún), semillas de chía</li>
+                <li><strong>Beneficios comprobados:</strong> Producción hormonal (testosterona), salud articular, absorción de vitaminas liposolubles</li>
+                <li><strong>Momento ideal:</strong> Fuera del período peri-entrenamiento (comidas más alejadas del ejercicio)</li>
+            </ul>
+        </div>
+        
+        <div class="card fade-in">
+            <h2>Suplementos con Evidencia Científica</h2>
+            <p>Estos suplementos cuentan con respaldo científico para mejorar el rendimiento y la hipertrofia muscular:</p>
+            
+            <div class="supplement-grid">
+                <div class="supplement-card">
+                    <h3>Creatina Monohidrato</h3>
+                    <p><strong>Dosis:</strong> 5g/día (fase de mantenimiento)</p>
+                    <p><strong>Beneficios:</strong> Aumenta fuerza (5-15%), volumen muscular (hasta 2kg en 4 semanas) y capacidad de trabajo</p>
+                    <p><strong>Momento ideal:</strong> Cualquier momento del día (con carbohidratos mejora absorción)</p>
+                </div>
+                
+                <div class="supplement-card">
+                    <h3>Proteína de Suero</h3>
+                    <p><strong>Dosis:</strong> 20-40g post-entreno</p>
+                    <p><strong>Beneficios:</strong> Ayuda a alcanzar requerimientos proteicos, rápida absorción post-entreno</p>
+                    <p><strong>Tipo recomendado:</strong> Whey protein isolate (mayor pureza)</p>
+                </div>
+                
+                <div class="supplement-card">
+                    <h3>Omega-3</h3>
+                    <p><strong>Dosis:</strong> 1-2g de EPA+DHA diarios</p>
+                    <p><strong>Beneficios:</strong> Reduce inflamación, mejora recuperación y sensibilidad a la insulina</p>
+                    <p><strong>Fuente premium:</strong> Aceite de pescado con alta concentración de EPA/DHA</p>
+                </div>
+                
+                <div class="supplement-card">
+                    <h3>Vitamina D3</h3>
+                    <p><strong>Dosis:</strong> 2000-4000 UI/día (ajustar según niveles sanguíneos)</p>
+                    <p><strong>Beneficios:</strong> Mejora función muscular, testosterona y sistema inmunológico</p>
+                    <p><strong>Recomendación:</strong> Tomar con comida grasa para mejor absorción</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card fade-in">
+            <h2>Plan Alimenticio para Hipertrofia (3000-3500 kcal)</h2>
+            
+            <div class="meal-plan">
+                <h3>Desayuno (7:00 AM)</h3>
+                <p>• 4 huevos enteros + 3 claras</p>
+                <p>• 100g de avena integral</p>
+                <p>• 1 plátano mediano</p>
+                <p>• 30g de almendras naturales</p>
+                <p>• 1 cucharadita de miel cruda</p>
+            </div>
+            
+            <div class="meal-plan">
+                <h3>Media Mañana (10:30 AM)</h3>
+                <p>• Batido: 1 scoop de proteína whey + 200ml de leche descremada + 30g de mantequilla de maní natural</p>
+                <p>• 1 rebanada de pan integral</p>
+            </div>
+            
+            <div class="meal-plan">
+                <h3>Almuerzo (1:30 PM)</h3>
+                <p>• 200g de pechuga de pollo a la plancha</p>
+                <p>• 150g de arroz basmati</p>
+                <p>• 1 taza de brócoli al vapor</p>
+                <p>• 1 cucharada de aceite de oliva extra virgen</p>
+                <p>• Ensalada verde variada</p>
+            </div>
+            
+            <div class="meal-plan">
+                <h3>Pre-entreno (4:00 PM)</h3>
+                <p>• 200g de batata cocida</p>
+                <p>• 100g de carne magra de res</p>
+                <p>• 1 taza de espinacas</p>
+                <p>• 1 cucharadita de semillas de chía</p>
+            </div>
+            
+            <div class="meal-plan">
+                <h3>Post-entreno (6:30 PM)</h3>
+                <p>• Batido: 1 scoop de proteína whey + 50g de avena + 1 cucharada de miel + 300ml de agua</p>
+                <p>• 1 manzana mediana</p>
+            </div>
+            
+            <div class="meal-plan">
+                <h3>Cena (8:30 PM)</h3>
+                <p>• 200g de salmón a la plancha</p>
+                <p>• 100g de quinoa cocida</p>
+                <p>• Ensalada de vegetales variados</p>
+                <p>• 1/2 aguacate</p>
+                <p>• 1 cucharada de aceite de linaza</p>
+            </div>
+            
+            <div class="highlight">
+                <p><strong>Consejos prácticos:</strong></p>
+                <ul>
+                    <li>Ajusta las cantidades según tu peso (multiplica por tu factor individual)</li>
+                    <li>Usa aplicaciones como MyFitnessPal para llevar un registro preciso</li>
+                    <li>Mantén una hidratación adecuada (35ml por kg de peso)</li>
+                    <li>Considera ciclar carbohidratos en días de descanso</li>
+                    <li>Realiza ajustes cada 4 semanas según progreso</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Hipertrofia Muscular | <a href="#">Contactar</a> | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Uso</a></p>
+    </footer>
+
+    <script>
+        // Efecto fade-in mejorado al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeInObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            fadeElements.forEach(el => {
+                fadeInObserver.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>

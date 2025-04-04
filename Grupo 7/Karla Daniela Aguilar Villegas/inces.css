@@ -1,0 +1,52 @@
+body {
+  background-color: #add8e6;
+  color: #2980b9;
+}
+
+#c1 {
+  width: 100px;
+  height: 100px;
+  background: blueviolet;
+  position: absolute;
+  left: 650px;
+  top: 0px;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #2980b9;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #1abc9c;
+}
+
+#servicios h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#servicios .col-md-4 a h1 {
+  color: #3498db;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#contacto form .form-group {
+  margin-bottom: 20px;
+}
+
+#contacto button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#contacto button:hover {
+  background-color: #2980b9;
+}

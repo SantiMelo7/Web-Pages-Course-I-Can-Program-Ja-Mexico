@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/jpg" href="Imagenes/Logopau.jpg"/>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+    <h1>Tienda de Paulina</h1>
+    <h2>Blusas</h2>
+</header>
+
+<nav>
+    <a href="Tienda.html">Inicio</a>
+</nav>
+
+<div class="products">
+    <div class="product" id="c1">
+        <img src="Imagenes/vestido1.jpg" alt="Jumper" width="200" height="200">
+        <h3>Jumper</h3>
+        <p>Tela techno crepe. Abarca *13-15-17*. *Ya incluye el fajo*</p>
+        <p class="price">$340</p>
+        <button class="buy-button" onclick="addToCart('Jumper', 340.00)">Comprar</button>
+    </div>
+
+    <div class="product" id="c2">
+        <img src="Imagenes/vestido2.jpg" alt="Vestido largo" width="200" height="200">
+        <h3>Vestido largo</h3>
+        <p>Tela Licra . Abarca *13-15-17*</p>
+        <p class="price">$330</p>
+        <button class="buy-button" onclick="addToCart('vestidolargo', 330.00)">Comprar</button>
+    </div>
+    <div class="product" id="c3">
+        <img src="Imagenes/vestido3.jpg" alt="Modelo 402" width="200" height="200">
+        <h3>Vestido jumper</h3>
+        <p>Tela Brush. Abarca *13-15-17*</p>
+        <p class="price">$300</p>
+        <button class="buy-button" onclick="addToCart('vestidojumper', 300.00)">Comprar</button>
+    </div>
+    <div class="product" id="c4">
+        <img src="Imagenes/vestido4.jpg" alt="Modelo 460" width="200" height="200">
+        <h3>Conjunto 2 piezas </h3>
+        <p>Tela Rib . Abarca *13-15-17*</p>
+        <p class="price">$340</p>
+        <button class="buy-button" onclick="addToCart('vestido2part', 340.00)">Comprar</button>
+    </div>
+    <div class="product" id="c5">
+        <img src="Imagenes/vestido5.jpg" alt="Modelo D109" width="200" height="200">
+        <h3>*Modelo T68*</h3>
+        <p>Tela cey. Vestido. Abarca *11-13-15*</p>
+        <p class="price">$300</p>
+        <button class="buy-button" onclick="addToCart('vestidoelegate', 300.00)">Comprar</button>
+    </div>
+    <div class="product" id="c6">
+        <img src="Imagenes/vestido6.jpg" alt="Modelo 739" width="200" height="200">
+        <h3>Vestido Olán</h3>
+        <p>*Tela* Rib. Abarca *13-15-17*</p>
+        <p class="price">$300 </p>
+        <button class="buy-button" onclick="addToCart('Vestido Olán', 300.00)">Comprar</button>
+    </div>
+    <div class="product" id="c7">
+        <img src="Imagenes/vestido7.jpg" alt="Modelo T55" width="200" height="200">
+        <h3>Vestido lijero</h3>
+        <p>Tela rib . Abarca *13-15-17*</p>
+        <p class="price">$230 </p>
+        <button class="buy-button" onclick="addToCart('Vestido lijero', 230.00)">Comprar</button>
+    </div>
+    <div class="product" id="c8">
+        <img src="Imagenes/vestido8.jpg" alt="Modelo campesina" width="200" height="200">
+        <h3>Vestido de gala</h3>
+        <p>Tela power satin. Abarca *13-15-17*</p>
+        <p class="price">$400 </p>
+        <button class="buy-button" onclick="addToCart('Vestido de gala', 400.00)">Comprar</button>
+    </div>
+    <div class="product" id="c9">
+        <img src="Imagenes/vestido9.jpg" alt="Modelo 016" width="200" height="200">
+        <h3>Vestido rayado </h3>
+        <p>Tela rayón. Abarca *11-13-15*</p>
+        <p class="price">$340</p>
+        <button class="buy-button" onclick="addToCart('Vestido rayado ', 340.00)">Comprar</button>
+    </div>
+    <div class="product" id="c10">
+        <img src="Imagenes/vestido10.jpg" alt="Modelo 275 M/C" width="200" height="200">
+        <h3>Vestido liso</h3>
+        <p>Tela brush. Abarca *13-15-17*</p>
+        <p class="price">$280</p>
+        <button class="buy-button" onclick="addToCart('Vestido liso', 280.00)">Comprar</button>
+    </div>
+</div>
+
+<div class="cart" onclick="toggleCartDetails()">🛒</div>
+<div class="cart-details" id="cart-details">
+    <h3>Carrito de Compras</h3>
+    <ul id="cart-items">
+    </ul>
+    <p id="total-price">Total: $0.00</p>
+</div>
+
+<script>
+    let cart = [];
+
+    function addToCart(productName, productPrice) {
+        cart.push({ name: productName, price: productPrice });
+        updateCart();
+    }
+
+    function updateCart() {
+        const cartItems = document.getElementById('cart-items');
+        const totalPrice = document.getElementById('total-price');
+        cartItems.innerHTML = '';
+        let total = 0;
+
+        cart.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+            cartItems.appendChild(li);
+            total += item.price;
+        });
+
+        totalPrice.textContent = `Total: $${total.toFixed(2)}`;
+    }
+
+    function toggleCartDetails() {
+        const cartDetails = document.getElementById('cart-details');
+        cartDetails.style.display = cartDetails.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>

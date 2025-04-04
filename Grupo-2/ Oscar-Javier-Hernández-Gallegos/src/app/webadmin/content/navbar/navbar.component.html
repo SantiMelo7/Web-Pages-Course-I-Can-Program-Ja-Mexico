@@ -1,0 +1,27 @@
+<nav>
+  <div class="nav-wrapper gradient-bg" style="display: flex; justify-content: center; align-items: center;">
+    <a routerLink="inicio" class="brand-logo" style="display: flex; justify-content: center; align-items: center;">
+      <span class="logo-part-1">Reciclaje</span>
+      <span class="logo-part-2">Hub</span>
+    </a>
+
+    <!-- Botón para el menú móvil -->
+    <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+      <i class="material-icons">menu</i>
+    </a>
+  </div>
+</nav>
+
+<!-- Menú móvil -->
+<ul class="sidenav" id="mobile-menu">
+  <li>
+    <a routerLink="sesion" routerLinkActive="active">
+      <i class="material-icons">login</i> Iniciar sesión
+    </a>
+  </li>
+  <li>
+    <a routerLink="municipios" routerLinkActive="active">
+      <i class="material-icons">location_city</i> Municipios
+    </a>
+  </li>
+</ul>

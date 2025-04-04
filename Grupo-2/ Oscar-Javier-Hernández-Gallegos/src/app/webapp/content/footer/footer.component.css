@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.page-footer {
+  background: linear-gradient(to right, #004d40, #388e3c);
+  font-family: 'Poppins', sans-serif;
+}
+
+.gradient-text,
+.gradient-icon {
+  background: linear-gradient(to right, #01f31d, #03ff10);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+}
+
+.gradient-text2,
+.gradienticon {
+  background: linear-gradient(to right, #09ff01, #00e20b);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+}
+
+.page-footer a.gradient-text:hover {
+  color: transparent;
+  background: linear-gradient(to right, #01ff16, #00c10a);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Fuente personalizada */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Cambié la fuente global a Roboto */
+}
+
+.page-footer {
+    margin-top: 35px;
+    background: linear-gradient(135deg, #006400, #004d00);
+    /* Degradado de verde a verde más oscuro */
+}
+
+/* Estilos para los íconos */
+.page-footer ul li a i {
+    margin-right: 10px;
+    /* Añadí espacio entre el ícono y el texto */
+    font-size: 20px;
+    /* Tamaño adecuado para los íconos */
+}
+
+/* Para los enlaces */
+.page-footer ul li a {
+    display: flex;
+    align-items: center;
+    /* Alinea el ícono con el texto */
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.page-footer ul li a:hover {
+    color: #ffeb3b;
+    /* Color de hover amarillento para resaltar */
+}
+
+/* Estilos para los links de redes sociales */
+.page-footer .container {
+    padding: 20px;
+}
+
+.page-footer .footer-copyright {
+    background-color: #003300;
+    /* Un verde más oscuro para la parte del copyright */
+    color: #ffffff;
+}
+
+.page-footer .footer-copyright a {
+    color: #ffffff;
+}

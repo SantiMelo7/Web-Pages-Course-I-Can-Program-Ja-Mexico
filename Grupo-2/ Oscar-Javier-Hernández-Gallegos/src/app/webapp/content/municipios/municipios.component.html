@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="card card-custom center-align">
+        <div class="card-content">
+            <!-- Icono arriba del título -->
+            <i class="large material-icons" style="color: #5cf100;">location_city</i>
+            <span class="card-title card-title-small">Municipios</span>
+            <p class="card-description">Lista de municipios con sus respectivos centros de acopio.</p>
+        </div>
+    </div>
+
+    <ul class="collection">
+        <li class="collection-item avatar" *ngFor="let municipio of dMunicipios">
+            <div class="municipio-item">
+                <a (click)="onVerCentroAcopio(municipio.MunicipiosId)" class="material-icons icono-verde-lima">
+                    location_city
+                </a>
+
+
+                <div class="municipio-info">
+                    <span class="title">{{ municipio.Nombre }}</span>
+                    <p>{{ municipio.Ubicacion }}</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

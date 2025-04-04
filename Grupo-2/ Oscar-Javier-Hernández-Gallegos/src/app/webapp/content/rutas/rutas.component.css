@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Tema de rana */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e8f5e9;
+    /* Fondo suave verde */
+    color: #2c6b2f;
+    /* Verde oscuro para el texto */
+    animation: fadeIn 1s ease-in-out;
+    /* Animación de aparición de la página */
+    background-image: url('https://www.transparenttextures.com/patterns/green-fuzz.png');
+    /* Textura sutil */
+}
+
+/* Animaciones */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Contenedor principal para el contenido */
+.full-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+/* Contenedor de selectores */
+.select-container {
+    width: 48%;
+    padding: 20px;
+    background-color: #c8e6c9;
+    /* Fondo verde claro para la sección de horarios */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    animation: slideInLeft 1s ease-out;
+}
+
+/* Títulos de los selectores */
+.select-container h5 {
+    font-size: 24px;
+    color: #388e3c;
+    /* Verde para el título */
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Estilo de los selectores */
+.input-field select {
+    width: 100%;
+    background-color: #f1f8e9;
+    /* Verde claro para los selectores */
+    color: #388e3c;
+    /* Verde oscuro para el texto de los selectores */
+    padding: 10px;
+    margin-bottom: 20px;
+    /* Espaciado entre los selectores */
+    border: 2px solid #388e3c;
+    border-radius: 8px;
+}
+
+.input-field label {
+    color: #388e3c;
+    /* Verde para las etiquetas */
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* Efecto hover en los selectores */
+.input-field select:hover {
+    background-color: #a8e6cf;
+    transform: scale(1.05);
+    /* Efecto de aumento */
+    transition: all 0.3s ease;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+table th {
+    background-color: #388e3c;
+    /* Verde oscuro para los encabezados */
+    color: white;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #d7f5d0;
+    /* Verde claro para las filas impares */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #a8e6cf;
+    /* Verde suave para las filas pares */
+}
+
+/* Efecto hover en las filas de la tabla */
+table tbody tr:hover {
+    background-color: #80e27e;
+    /* Verde más brillante */
+    cursor: pointer;
+    transform: scale(1.05);
+    /* Efecto de aumento */
+    transition: all 0.3s ease;
+}
+
+/* Estilo del título "Ubicación" */
+.ubicacion-titulo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #388e3c;
+    /* Verde para el título */
+    text-align: left;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+    /* Animación de aparición suave */
+}
+
+/* Contenedor del mapa */
+iframe {
+    width: 100%;
+    /* Ancho completo */
+    height: 600px;
+    /* Altura del mapa aumentada */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideInRight 1s ease-out;
+    /* Animación de deslizamiento desde la derecha */
+    border: 4px solid #388e3c;
+    /* Borde verde */
+}
+
+/* Fuente personalizada */
+h5 {
+    font-weight: bold;
+    color: #388e3c;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Efecto hover en iconos */
+i.material-icons {
+    font-size: 32px;
+    color: #388e3c;
+    transition: all 0.3s ease;
+}
+
+i.material-icons:hover {
+    transform: scale(1.2);
+    /* Aumento de tamaño al pasar el ratón */
+}
+
+/* Ajuste del mapa */
+iframe {
+    width: 100%;
+    height: 600px;
+    /* Aumenta la altura del mapa */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideInRight 1s ease-out;
+    /* Animación de deslizamiento desde la derecha */
+    border: 4px solid #388e3c;
+    /* Borde verde */
+}
+
+/* Tabla de horarios */
+table.centered {
+    width: 80%;
+    /* Limita el ancho de la tabla al 80% del contenedor */
+    max-width: 800px;
+    /* Establece un ancho máximo para la tabla */
+    margin: 20px auto;
+    /* Centra la tabla horizontalmente */
+    border-collapse: collapse;
+    /* Hace que los bordes de las celdas se junten */
+    border: 2px solid black;
+    /* Agrega un borde alrededor de la tabla */
+}
+
+table.centered th,
+table.centered td {
+    border: 1px solid black;
+    /* Agrega un borde alrededor de cada celda */
+    padding: 8px;
+    /* Reduce el espaciado dentro de las celdas */
+    text-align: center;
+    /* Centra el contenido dentro de las celdas */
+    font-size: 14px;
+    /* Reduce el tamaño de la fuente */
+}
+
+table.centered th {
+    background-color: #f2f2f2;
+    /* Color de fondo para las celdas del encabezado */
+}
+
+/* Estilo para el ícono de rana (nature_people) */
+i.material-icons.rana-icon {
+    font-size: 40px;
+    /* Tamaño del ícono */
+    color: #388e3c;
+    /* Verde rana */
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+    /* Transición suave para el cambio de tamaño y color */
+}
+
+/* Animación cuando se pasa el ratón */
+i.material-icons.rana-icon:hover {
+    transform: scale(1.2);
+    /* Aumento del tamaño */
+    color: #80e27e;
+    /* Cambio de color a verde más brillante */
+}
+
+/* Estilo para el contenedor de la ubicación */
+.ubicacion-titulo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #388e3c;
+    /* Verde para el título */
+    text-align: left;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    /* Alinea el texto y el ícono */
+}
+
+/* Espacio entre el texto y el icono */
+.ubicacion-titulo i {
+    margin-left: 10px;
+    /* Separación del texto y el icono */
+}
+
+/* Estilos para el iframe del mapa */
+iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideInRight 1s ease-out;
+    border: 4px solid #388e3c;
+    /* Borde verde para el mapa */
+}
+
+/* Animación de deslizamiento desde la derecha para el mapa */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Ajustes generales de la tabla de horarios */
+table.centered {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+table.centered th,
+table.centered td {
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+table.centered th {
+    background-color: #f2f2f2;
+}
+
+table.centered tbody tr:nth-child(odd) {
+    background-color: #d7f5d0;
+}
+
+table.centered tbody tr:nth-child(even) {
+    background-color: #a8e6cf;
+}
+
+/* Estilo para los selectores */
+.input-field select {
+    background-color: #f1f8e9;
+    color: #388e3c;
+}
+
+.input-field select:hover {
+    background-color: #a8e6cf;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en las filas de la tabla */
+table tbody tr:hover {
+    background-color: #80e27e;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Estilo para el ícono de naturaleza */
+i.material-icons.rana-icon {
+    font-size: 40px;
+    /* Tamaño del ícono */
+    color: #388e3c;
+    /* Verde rana */
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+    /* Transición suave para el cambio de tamaño y color */
+}
+
+/* Animación cuando se pasa el ratón */
+i.material-icons.rana-icon:hover {
+    transform: scale(1.2);
+    /* Aumento del tamaño */
+    color: #80e27e;
+    /* Cambio de color a verde más brillante */
+}
+
+/* Estilo para el contenedor de la ubicación */
+.ubicacion-titulo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #388e3c;
+    /* Verde para el título */
+    text-align: left;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    /* Alinea el texto y el ícono */
+}
+
+/* Espacio entre el texto y el icono */
+.ubicacion-titulo i {
+    margin-left: 10px;
+    /* Separación del texto y el icono */
+}
+
+/* Estilos para el iframe del mapa */
+iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideInRight 1s ease-out;
+    border: 4px solid #388e3c;
+    /* Borde verde para el mapa */
+}
+
+/* Animación de deslizamiento desde la derecha para el mapa */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Estilo para el emoji de rana */
+.rana-emoji {
+    font-size: 40px;
+    /* Tamaño del emoji */
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+    /* Transición suave para el cambio de tamaño y color */
+}
+
+/* Animación cuando se pasa el ratón */
+.rana-emoji:hover {
+    transform: scale(1.2);
+    /* Aumento del tamaño */
+    color: #80e27e;
+    /* Cambio de color a verde más brillante */
+}
+
+/* Estilo para el contenedor de la ubicación */
+.ubicacion-titulo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #388e3c;
+    /* Verde para el título */
+    text-align: left;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    /* Alinea el texto y el emoji */
+}
+
+/* Espacio entre el texto y el emoji */
+.ubicacion-titulo .rana-emoji {
+    margin-left: 10px;
+    /* Separación del texto y el emoji */
+}
+
+/* Estilos para el iframe del mapa */
+iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideInRight 1s ease-out;
+    border: 4px solid #388e3c;
+    /* Borde verde para el mapa */
+}
+
+/* Animación de deslizamiento desde la derecha para el mapa */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.municipio-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .ruta-info {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .iconos-derecha {
+    display: flex;
+    gap: 10px;
+  }
+  body {
+    background: linear-gradient(to bottom, #a8e063, #56ab2f); /* Degradado verde ecológico */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    padding: 20px;
+  }
+  
+  /* Estilos de las tarjetas */
+  .card {
+    background: #f8fff4; /* Fondo claro con tono ecológico */
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Contenido de la tarjeta */
+  .card-content {
+    color: #2e7d32; /* Verde oscuro para el texto */
+  }
+  
+  /* Estilo del título */
+  h4 {
+    color: rgb(11, 0, 0);
+    text-align: center;
+  }
+  
+  /* Botón flotante */
+  .fixed-action-btn .btn-floating {
+    background-color: #2e7d32 !important; /* Verde oscuro */
+  }
+  /* Animación al pasar el cursor */
+  .ruta-btn {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .ruta-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Estilos generales */
+  body {
+    background: linear-gradient(to bottom, #a8e063, #56ab2f); /* Degradado verde ecológico */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    padding: 20px;
+  }
+  
+  /* Estilos de las tarjetas */
+  .card {
+    background: #f8fff4; /* Fondo claro con tono ecológico */
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Contenido de la tarjeta */
+  .card-content {
+    color: #2e7d32; /* Verde oscuro para el texto */
+  }
+  
+  /* Estilo del título */
+  h4 {
+    color: rgb(11, 0, 0);
+    text-align: center;
+  }
+   /* Fondo de la tarjeta igual al home-section */
+   .card-custom {
+    background: linear-gradient(to right, #004d40, #388e3c);
+    color: white;
+    /* Texto en blanco */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el icono */
+.icon-municipios {
+    font-size: 40px;
+    /* Tamaño del icono */
+    color: white;
+    /* Color blanco para que resalte */
+    display: block;
+    /* Se muestra encima del texto */
+    text-align: center;
+    /* Centrado */
+    margin-bottom: 10px;
+    /* Espacio entre icono y título */
+}
+
+/* Asegurar que el título y descripción sean blancos */
+.card-custom .card-title-small,
+.card-custom .card-description {
+    color: white;
+}
+
+.card-content .material-icons {
+  font-size: 48px;  /* Aumenta el tamaño del icono */
+  margin-bottom: 16px;  /* Agrega un espaciado debajo del icono */
+}
+
+.card-title {
+  margin-top: 0;  /* Elimina cualquier margen superior por defecto en el título */
+}
+
+.card-description {
+  margin-top: 12px;  /* Agrega un espaciado entre el título y la descripción */
+}
+
+.municipio-item .material-icons {
+  font-size: 48px;  /* Aumenta el tamaño del icono */
+  margin-bottom: 16px;  /* Agrega un espaciado debajo del icono */
+}
+
+.municipio-item .municipio-info {
+  margin-top: 8px;  /* Espaciado entre el icono y la información de la ruta */
+}
+
+.municipio-item .ruta-info {
+  margin-top: 8px;  /* Espaciado entre la información de la ruta y la guía */
+}
+
+.municipio-info h4, .ruta-info h4 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;  /* Puedes ajustar el tamaño según tu preferencia */
+}
+
+.municipio-info, .ruta-info {
+  margin-top: 10px;
+}
+
+.ruta-info .guia-text {
+  font-weight: normal;  /* Quita las negritas solo en el texto de Guia */
+}
+.icono {
+  color: #32CD32;  /* Color verde lima */
+  cursor: pointer;  /* Cursor de mano al pasar el ratón */
+  transition: transform 0.3s ease;  /* Transición suave para el movimiento */
+}
+
+/* Efecto de movimiento al pasar el mouse */
+.icono:hover {
+  transform: scale(1.2);  /* Aumenta el tamaño del icono al 120% */
+}

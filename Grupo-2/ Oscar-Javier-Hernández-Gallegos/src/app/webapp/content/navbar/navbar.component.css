@@ -1,0 +1,75 @@
+/* 🎨 Fondo degradado del navbar */
+.gradient-bg {
+    background: linear-gradient(to right, #004d40, #388e3c);
+    padding: 0 30px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+/* 📌 Logo */
+.brand-logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.logo-part-1 {
+    color: #01f31d;
+}
+
+.logo-part-2 {
+    color: #004d40;
+    background-color: #01f31d;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 8px;
+}
+
+/* 📌 Estilos del menú */
+#nav-mobile {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 20px;
+}
+
+.nav-link {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-link i.material-icons {
+    font-size: 1.8em;
+}
+
+/* 📌 Menú móvil */
+.sidenav {
+    background: #004d40;
+}
+
+.sidenav a {
+    font-size: 1.2em;
+    color: white;
+    padding: 15px;
+}
+
+.sidenav a:hover {
+    background: #388e3c;
+}
+
+/* 📌 Responsivo */
+@media (max-width: 992px) {
+    .gradient-bg {
+        padding: 15px 20px;
+        height: auto;
+    }
+
+    .brand-logo {
+        font-size: 1.8em;
+    }
+}

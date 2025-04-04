@@ -1,0 +1,13 @@
+
+/*Estilo de los botones*/
+
+.border-btn {
+    border: 2px solid black; /* Contorno negro*/
+    border-radius: 4px; /* Bordes redondeados, si lo prefieres */
+  }
+
+.narrow-btn {
+    padding-left: 10px;  /* Reduce el padding izquierdo */
+    padding-right: 10px; /* Reduce el padding derecho */
+    width: auto;         /* Ajusta el ancho según el contenido */
+  }

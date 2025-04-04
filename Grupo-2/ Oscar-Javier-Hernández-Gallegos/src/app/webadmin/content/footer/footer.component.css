@@ -1,0 +1,48 @@
+/* Fuente personalizada */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Cambié la fuente global a Roboto */
+}
+
+.page-footer {
+    margin-top: 35px;
+    background: linear-gradient(135deg, #006400, #004d00);
+    /* Degradado de verde a verde más oscuro */
+}
+
+/* Estilos para los íconos */
+.page-footer ul li a i {
+    margin-right: 10px;
+    /* Añadí espacio entre el ícono y el texto */
+    font-size: 20px;
+    /* Tamaño adecuado para los íconos */
+}
+
+/* Para los enlaces */
+.page-footer ul li a {
+    display: flex;
+    align-items: center;
+    /* Alinea el ícono con el texto */
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.page-footer ul li a:hover {
+    color: #ffeb3b;
+    /* Color de hover amarillento para resaltar */
+}
+
+/* Estilos para los links de redes sociales */
+.page-footer .container {
+    padding: 20px;
+}
+
+.page-footer .footer-copyright {
+    background-color: #003300;
+    /* Un verde más oscuro para la parte del copyright */
+    color: #ffffff;
+}
+
+.page-footer .footer-copyright a {
+    color: #ffffff;
+}

@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="card card-custom center-align">
+        <div class="card-content">
+            <!-- Icono arriba del título -->
+            <i  class="material-icons icono icono-animado ">
+                local_shipping</i>
+            <span class="card-title card-title-small">Camiones</span>
+            <p class="card-description">Lista de camiones que hay en las rutas.</p>
+        </div>
+    </div>
+
+
+    <ul class="collection">
+        <li class="collection-item avatar" *ngFor="let Camiones of dCamiones">
+            <div class="municipio-item">
+                <a class="material-icons icono icono-animado ">
+                    local_shipping</a>
+
+                <!-- Encabezado para Nombre Ruta -->
+                <div class="municipio-info">
+                    <h4>Latitud:</h4>
+                    <span class="title">{{ Camiones.LatCam }}</span>
+                </div>
+
+                <!-- Encabezado para Guía -->
+                <div class="ruta-info">
+                    <h4>Longitud:</h4>
+                    <span class="guia-text">{{ Camiones.LongCam }}</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</div>

@@ -1,0 +1,45 @@
+h1{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font: size 48px;
+    background-color: pink;
+}
+
+body{
+    background-color: lightgrey;
+    <div> 
+    <bottom: onlick="alert(´hola!´)";>Pulsame:  !>
+    </bottom>
+    </div>
+} 
+
+h2{
+    font-style: italic;
+    font-size: 50px;
+    background-image: url(fondo.jpg);
+}
+
+{font:italic;
+color: blue}
+
+h1{font-style:italic;
+    font-size: 50px;
+}
+
+.destacado{
+    color: white;
+}
+.titulos_rosas{
+    color:palevioletred;
+}
+#mi_parrafo{
+    color:dimgrey;
+}
+    
+#recuadro{
+    background-color: lightsteelblue;
+    width: 200px;
+    height: 100px;
+    padding: 50px;
+    margin: 70px;
+}

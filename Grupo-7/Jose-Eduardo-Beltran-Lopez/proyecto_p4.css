@@ -1,0 +1,887 @@
+body{
+	background-image: url("fonfo.jpg");
+	background-size: cover;
+	background-repeat: no repeat;
+	background-position: center center;
+  	background-attachment: fixed;
+}
+hr{
+	border: 8px solid #D3FBFE;
+	border-style: double;
+}
+.introduccion{
+	font-family:Godzilla, Showcard Gothic;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 8em;
+	text-align: center;
+}
+.introduccion2{
+	font-family:Godzilla, Showcard Gothic;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 8em;
+	text-align: center;
+}
+.dieciseis{
+	font-family:The Lost Dungeon, Stencil;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+}
+.division_dieciseis{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 70%;
+	background-color: rgba(0,7,32,1.0);
+}
+.posterright84{
+	border: 10px solid #E6FEFF;
+	float: right;
+	width: 25%;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright84{
+	transform: scale(1.2);
+}
+.posterright84_2{
+	border: 10px solid #E6FEFF;
+	float: right;
+	margin-top: 755;
+	margin-right: -400;
+	width: 25%;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright84_2{
+	transform: scale(1.2);
+}
+.diseño_dieciseis{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+}
+.art_diseño_dieciseis{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 25%;
+	background-color: rgba(0,7,32,1.0);
+	font-family: Comic Sans MS;
+}
+.diseño1984{
+	border: 10px solid #E6FEFF;
+	margin-left: 450;
+	width: 30%;
+	margin-top: -350;
+}
+.trailer_dieciseis{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+}
+.vid_trailer_dieciseis{
+	border: 10px solid #E6FEFF;
+	width: 50%;
+}
+.diecisiete{
+	font-family:The Lost Dungeon, Stencil;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.posterright89{
+	border: 10px solid #E6FEFF;
+	float: right;
+	width: 25%;
+	margin-top: 150;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright89{
+	transform: scale(1.2);
+}
+.posterright89_2{
+	border: 10px solid #E6FEFF;
+	float: right;
+	width: 25%;
+	margin-top: 1250;
+	margin-right: -400;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright89_2{
+	transform: scale(1.2);
+}
+.posterright89_3{
+	border: 10px solid #E6FEFF;
+	float: right;
+	width: 25%;
+	margin-top: 2500;
+	margin-right: -400;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright89_3{
+	transform: scale(1.2);
+}
+.division_diecisiete{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 70%;
+	background-color: rgba(0,7,32,1.0);
+	
+}
+.diseño_diecisiete{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.art_diseño_diecisiete{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 25%;
+	background-color: rgba(0,7,32,1.0);
+	font-family: Comic Sans MS;
+}
+.diseño1989{
+	border: 10px solid #E6FEFF;
+	width: 25%;
+	margin-left: 450;
+	margin-top: -300;
+}
+.trailer_diecisiete{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+}
+.vid_trailer_diecisiete{
+	border: 10px solid #E6FEFF;
+	width: 50%;
+	
+}
+.dieciocho{
+	font-family:The Lost Dungeon, Stencil;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.posterright91{
+	border: 10px solid #E6FEFF;
+	float: right;
+	width: 25%;
+	margin-top: 50;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright91{
+	transform: scale(1.2);
+}
+.posterright91_2{
+	border: 10px solid #E6FEFF;
+	float: right;
+	width: 25%;
+	margin-top: 725;
+	margin-right: -400;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright91_2{
+	transform: scale(1.2);
+}
+.division_dieciocho{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 70%;
+	background-color: rgba(0,7,32,1.0);
+	
+}
+.diseño_dieciocho{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.art_diseño_dieciocho{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 25%;
+	background-color: rgba(0,7,32,1.0);
+	font-family: Comic Sans MS;
+}
+.diseño1991{
+	border: 10px solid #E6FEFF;
+	width: 25%;
+	margin-left: 450;
+	margin-top: -250;
+}
+.trailer_dieciocho{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+}
+.vid_trailer_dieciocho{
+	border: 10px solid #E6FEFF;
+	width: 50%;
+	
+}
+.diecinueve{
+	font-family:The Lost Dungeon, Stencil;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.posterright92{
+	border: 10px solid #E6FEFF;
+	float: right;
+	width: 25%;
+	margin-top: 100;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright92{
+	transform: scale(1.2);
+}
+.division_diecinueve{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 70%;
+	background-color: rgba(0,7,32,1.0);
+	
+}
+.diseño_diecinueve{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.art_diseño_diecinueve{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 15%;
+	background-color: rgba(0,7,32,1.0);
+	font-family: Comic Sans MS;
+}
+.diseño1992{
+	border: 10px solid #E6FEFF;
+	width: 25%;
+	margin-left: 300;
+	margin-top: -450;
+}
+.trailer_diecinueve{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+}
+.vid_trailer_diecinueve{
+	border: 10px solid #E6FEFF;
+	width: 50%;
+}
+.veinte{
+	font-family:The Lost Dungeon, Stencil;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.posterright93{
+	border: 10px solid #E6FEFF;
+	float: right;
+	width: 25%;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright93{
+	transform: scale(1.2);
+}
+.posterright93_2{
+	border: 10px solid #E6FEFF;
+	float: right;
+	width: 25%;
+	margin-top: 600;
+	margin-right: -400;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright93_2{
+	transform: scale(1.2);
+}
+.division_veinte{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 70%;
+	background-color: rgba(0,7,32,1.0);
+	
+}
+.diseño_veinte{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.art_diseño_veinte{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 23%;
+	background-color: rgba(0,7,32,1.0);
+	font-family: Comic Sans MS;
+}
+.diseño1993{
+	border: 10px solid #E6FEFF;
+	width: 25%;
+	margin-left: 400;
+	margin-top: -250;
+	
+}
+.trailer_veinte{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+}
+.vid_trailer_veinte{
+	border: 10px solid #E6FEFF;
+	width: 50%;
+}
+.veinteuno{
+	font-family:The Lost Dungeon, Stencil;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.posterright94{
+	border: 10px solid #E6FEFF;
+	float: right;
+	width: 25%;
+	margin-top: 100;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright94{
+	transform: scale(1.2);
+}
+.division_veinteuno{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 70%;
+	background-color: rgba(0,7,32,1.0);
+	
+}
+.diseño_veinteuno{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.art_diseño_veinteuno{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 25%;
+	background-color: rgba(0,7,32,1.0);
+	font-family: Comic Sans MS;
+}
+.diseño1994{
+	border: 10px solid #E6FEFF;
+	width: 25%;
+	margin-left: 450;
+	margin-top: -250;
+	
+}
+.trailer_veinteuno{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+}
+.vid_trailer_veinteuno{
+	border: 10px solid #E6FEFF;
+	width: 50%;
+}
+.veintedos{
+	font-family:The Lost Dungeon, Stencil;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.posterright95{
+	border: 10px solid #E6FEFF;
+	float: right;
+	width: 25%;
+	margin-top: 50;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright95{
+	transform: scale(1.2);
+}
+.division_veintedos{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 70%;
+	background-color: rgba(0,7,32,1.0);
+	
+}
+.diseño_veintedos{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.art_diseño_veintedos{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 15%;
+	background-color: rgba(0,7,32,1.0);
+	font-family: Comic Sans MS;
+}
+.diseño1995{
+	border: 10px solid #E6FEFF;
+	width: 25%;
+	margin-left: 300;
+	margin-top: -450;
+}
+.trailer_veintedos{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+}
+.vid_trailer_veintedos{
+	border: 10px solid #E6FEFF;
+	width: 50%;
+}
+.veintetres{
+	font-family:The Lost Dungeon, Stencil;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.posterright99{
+	border: 10px solid #E6FEFF;
+	float: right;
+	width: 25%;
+	margin-top: 200;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright99{
+	transform: scale(1.2);
+}
+.division_veintetres{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 70%;
+	background-color: rgba(0,7,32,1.0);
+	
+}
+.diseño_veintetres{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.art_diseño_veintetres{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 15%;
+	background-color: rgba(0,7,32,1.0);
+	font-family: Comic Sans MS;
+}
+.diseño1999{
+	border: 10px solid #E6FEFF;
+	width: 25%;
+	margin-left: 300;
+	margin-top: -550;
+}
+.trailer_veintetres{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+}
+.vid_trailer_veintetres{
+	border: 10px solid #E6FEFF;
+	width: 50%;
+}
+.veintecuatro{
+	font-family:The Lost Dungeon, Stencil;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.posterright00{
+	border: 10px solid #E6FEFF;
+	float: right;
+	width: 25%;
+	margin-top: 50;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright00{
+	transform: scale(1.2);
+}
+.division_veintecuatro{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 70%;
+	background-color: rgba(0,7,32,1.0);
+	
+}
+.diseño_veintecuatro{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.art_diseño_veintecuatro{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 15%;
+	background-color: rgba(0,7,32,1.0);
+	font-family: Comic Sans MS;
+}
+.diseño2000{
+	border: 10px solid #E6FEFF;
+	width: 25%;
+	margin-left: 300;
+}
+.trailer_veintecuatro{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+}
+.vid_trailer_veintecuatro{
+	border: 10px solid #E6FEFF;
+	width: 50%;
+}
+.veintecinco{
+	font-family:The Lost Dungeon, Stencil;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.posterright01{
+	border: 10px solid #E6FEFF;
+	float: right;
+	width: 25%;
+	margin-top: 100;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright01{
+	transform: scale(1.2);
+}
+.division_veintecinco{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 70%;
+	background-color: rgba(0,7,32,1.0);
+}
+.diseño_veintecinco{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.art_diseño_veintecinco{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 25%;
+	background-color: rgba(0,7,32,1.0);
+	font-family: Comic Sans MS;
+}
+.diseño2001{
+	border: 10px solid #E6FEFF;
+	width: 25%;
+	margin-left: 500;
+	margin-top: -250;
+	transition: transform 0.3s ease;
+}
+.trailer_veintecinco{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+}
+.vid_trailer_veintecinco{
+	border: 10px solid #E6FEFF;
+	width: 50%;
+}
+.veinteseis{
+	font-family:The Lost Dungeon, Stencil;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.posterright02{
+	border: 10px solid #E6FEFF;
+	float: right;
+	width: 15%;
+	margin-top: 30;
+	margin-right: 50;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright02{
+	transform: scale(1.2);
+}
+.division_veinteseis{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 70%;
+	background-color: rgba(0,7,32,1.0);
+	
+}
+.diseño_veinteseis{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.art_diseño_veinteseis{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 15%;
+	background-color: rgba(0,7,32,1.0);
+	font-family: Comic Sans MS;
+}
+.diseño2002{
+	border: 10px solid #E6FEFF;
+	width: 25%;
+	margin-left: 300;
+	
+}
+.trailer_veinteseis{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+}
+.vid_trailer_veinteseis{
+	border: 10px solid #E6FEFF;
+	width: 50%;
+}
+.veintesiete{
+	font-family:The Lost Dungeon, Stencil;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.posterright03{
+	border: 10px solid #E6FEFF;
+	float: right;
+	width: 13%;
+	margin-right: 60;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright03{
+	transform: scale(1.2);
+}
+.division_veintesiete{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 70%;
+	background-color: rgba(0,7,32,1.0);
+	
+}
+.diseño_veintesiete{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.art_diseño_veintesiete{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 20%;
+	background-color: rgba(0,7,32,1.0);
+	font-family: Comic Sans MS;
+}
+.diseño2003{
+	border: 10px solid #E6FEFF;
+	width: 25%;
+	margin-left: 400;
+	margin-top: -480;
+}
+.trailer_veintesiete{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+}
+.vid_trailer_veintesiete{
+	border: 10px solid #E6FEFF;
+	width: 50%;
+}
+.veinteocho{
+	font-family:The Lost Dungeon, Stencil;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.posterright04{
+	border: 10px solid #E6FEFF;
+	float: right;
+	width: 22%;
+	margin-right: 20;
+	margin-top: 150;
+	transition: transform 0.3s ease;
+}
+.contenedor:hover .posterright04{
+	transform: scale(1.2);
+}
+.division_veinteocho{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 70%;
+	background-color: rgba(0,7,32,1.0);
+	
+}
+.diseño_veinteocho{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	
+}
+.art_diseño_veinteocho{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 25%;
+	background-color: rgba(0,7,32,1.0);
+	font-family: Comic Sans MS;
+}
+.diseño2004{
+	border: 10px solid #E6FEFF;
+	width: 25%;
+	margin-left: 500;
+	margin-top: -300;
+}
+.trailer_veinteocho{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+}
+.vid_trailer_veinteocho{
+	border: 10px solid #E6FEFF;
+	width: 50%;
+}
+.izquierda{
+	border: 5px solid #1C0257;
+	background-color: #D3FBFE;
+	border-radius: 12px;
+	font-size: 2em;
+	float: left;
+}
+.derecha{
+	border: 5px solid #1C0257;
+	background-color: #D3FBFE;
+	border-radius: 12px;
+	font-size: 2em;
+	float: right;
+}

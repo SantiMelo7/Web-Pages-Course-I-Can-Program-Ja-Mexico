@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Mi primer sitio web</title>
+</head>
+<body>
+    <h1 class="destacado">Este es un encabezado h1</h1>
+    <p id="mi_parrafo">Este elemento es un párrafo</p>
+    <a href="https://junior.org.ar/">Link a Junior</a>
+
+    <h2>Este es un encabezado h2</h2>
+    <h3>Este es un encabezado h3</h3>
+    <h4 class="titulos_rosas">Este es un encabezado h4</h4>
+    <h5 class="titulos_rosas">Este es un encabezado h5</h5>
+    <h6>Este es un encabezado h6</h6>
+
+    <p id="recuadro">Este es otro párrafo</p>
+    <br>
+
+    <img src="imagen.png" alt="logo html" />
+
+    <br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/10GHKjgQIR0?si=KtcCb0zXz59L2wnH"
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <video controls>
+        <source src="videoplayback.mp4" type="video/mp4" />
+    </video>
+
+    <video autoplay muted>
+        <source src="videoplayback.mp4" type="video/mp4" />
+    </video>
+
+    <div>
+        <video loop muted autoplay>
+            <source src="videoplayback.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <div>
+        <img src="imagen.png" alt="logo html" width="100px" />
+        <img src="imagen.png" alt="logo html" width="100px" />
+    </div>
+
+    <h1>Mi primer título</h1>
+    <h2 class="titulos_rosas">Mi segundo título</h2>
+    <h3 class="titulos_rosas">Mi tercer título</h3>
+
+    <p>Esto es un párrafo y soy un bloque
+        <span>y soy un span, elemento en línea</span>
+        y continúa este párrafo...
+    </p>
+
+    <div>
+        <button onclick="alert('¡Hola!')">¡Púlsame!</button>
+    </div>
+
+    <br>
+
+    <button onclick="confirm('¿Quieres salir de esta página?')">Continuar otra web</button>
+
+    <div>
+        <img id="prender_apagar" class="Lampara" src="lampara_apagada.jpg" alt="Lámpara apagada">
+    </div>
+
+    <button class="Mi_lampara"
+        onclick="document.getElementById('prender_apagar').src='lampara_prendida.jpg'">
+        Prender lámpara
+    </button>
+
+    <button class="Mi_lampara"
+        onclick="document.getElementById('prender_apagar').src='lampara_apagada.jpg'">
+        Apagar lámpara
+    </button>
+    <div>
+        <img id="cat" src="white-cat.jpg"
+        onmouseover="src='black-cat.jpg';"
+        onmouseout="src= 'white-cat.jpg';" width="25%">
+    </div>
+</body>
+</html>

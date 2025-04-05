@@ -1,0 +1,103 @@
+body{
+	background-image: url("fonfo.jpg");
+	background-size: cover;
+	background-repeat: no repeat;
+	background-position: center center;
+  	background-attachment: fixed;
+}
+.introduccion{
+	font-family:Godzilla, Showcard Gothic;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 8em;
+	text-align: center;
+}
+hr{
+	border: 8px solid #D3FBFE;
+	border-style: double;
+}
+h2{
+	font-family:The Lost Dungeon, Stencil;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+}
+div{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 70%;
+	background-color: rgba(0,7,32,1.0);
+	box-shadow: 5px 5px cyan;
+}
+h3{
+	font-family: What Are You Doing, Harlow Solid;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+}
+.posterright{
+	border: 10px solid #E6FEFF;
+	float: right;
+	margin-top: 240;
+	width: 25%;
+	transition: transform 1.0s;
+}
+.contenedor:hover .posterright{
+	transform: scale(1.2);
+}
+.posterright2{
+	border: 10px solid #E6FEFF;
+	float: right;
+	margin-top: 1200;
+	margin-right: -450;
+	width: 25%;
+	transition: transform 1.0s;
+}
+.contenedor:hover .posterright2{
+	transform: scale(1.2);
+}
+.diseño{
+	border: 5px solid #33005F;
+	text-align: justify;
+	font-size: 20px;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	width: 15%;
+	background-color: rgba(0,7,32,1.0);
+}
+.diseño1954{
+	border: 10px solid #E6FEFF;
+	margin-left: 400;
+	width: 25%;
+	margin-top: -290;
+	font-family: Comic Sans MS;
+}
+video{
+	border: 10px solid #E6FEFF;
+	width: 50%;
+}
+td, th{
+	border:7px solid #33005F;
+	font-size: 20px;
+	color:#D3FBFE;
+	font-family: Comic Sans MS;
+	background-color: rgba(0,7,32,1.0);
+}
+.izquierda{
+	border: 5px solid #1C0257;
+	background-color: #D3FBFE;
+	border-radius: 12px;
+	font-size: 2em;
+	float: left;
+}
+.derecha{
+	border: 5px solid #1C0257;
+	background-color: #D3FBFE;
+	border-radius: 12px;
+	font-size: 2em;
+	float: right;
+}

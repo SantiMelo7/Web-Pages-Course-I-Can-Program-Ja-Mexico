@@ -1,0 +1,55 @@
+body{
+	background-image:url("fonfo.jpg");
+	background-size: cover;
+	background-repeat: no repeat;
+	background-position: center center;
+  	background-attachment: fixed;
+	color: #D3FBFE;
+	font-family: Sitka;
+	font-size: 25px;
+}
+hr{
+	border: 8px solid #D3FBFE;
+	border-style: double;
+}
+.fondos{
+	background-color:rgba(0,7,32,1.0);
+	border: 5px solid #1C0257;
+	font-family: Comic Sans MS;
+}
+.titulo{
+	font-family:Godzilla, Showcard Gothic;
+	font-size: 4.5em;
+	color: #D3FBFE;
+}
+.subtitulo{
+	font-family: What Are You Doing, Harlow Solid;
+	font-size: 2em;
+	color: #D3FBFE;
+}
+textarea{
+	background-color:rgba(0,7,32,1.0);
+	color: #D3FBFE;
+}
+.custom-checkbox{
+	width: 30px;
+        height: 30px;
+}
+.prueba{
+	background-color:rgba(0,7,32,1.0);
+	color: #D3FBFE;
+}
+button{
+	background-color: #090547;
+	color: #FFFBAB;
+	border-color: #755DEE;
+	width: 70px;
+	height: 70px;
+}
+.izquierda{
+	border: 5px solid #1C0257;
+	background-color: #D3FBFE;
+	border-radius: 12px;
+	width: 25%;
+	font-size: 1.5em;
+}

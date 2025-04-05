@@ -1,0 +1,118 @@
+body{
+	background-image: url("fonfo.jpg");
+	background-size: cover;
+	background-repeat: no repeat;
+	background-position: center center;
+  	background-attachment: fixed;
+}
+.introduccion{
+	font-family:Godzilla, Showcard Gothic;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 10em;
+	text-align: center;
+}
+hr{
+	border: 8px solid #D3FBFE;
+	border-style: double;
+}
+h2{
+	font-family:The Lost Dungeon, Stencil;
+	color: #D3FBFE;
+	text-shadow: 15px 15px #1C0257;
+	font-size: 2.5em;
+	text-align: center;
+}
+div{
+	border: 5px solid #33005F;
+	font-family: Comic Sans MS;
+	margin: auto;
+	width: 35%;
+	color: #D3FBFE;
+	padding: 15px 15px;
+	clear: right left;
+	background-color: rgba(0,7,32,1.0);
+}
+p{
+	font-size: 20px;
+	text-align: center;
+}
+.posterleft{
+	border: 10px solid #E6FEFF;
+	float: left;
+	margin-left: 45;
+	margin-top: 10;
+	width: 25%;
+	position: sticky;
+	transition: transform 1.0s;
+}
+.contenedor:hover .posterleft{
+	transform: scale(1.2);
+}
+.posterright{
+	border: 10px solid #E6FEFF;
+	float: right;
+	margin-right: 45;
+	margin-top: 10;
+	width: 25%;
+	position: sticky;
+	transition: transform 1.0s;
+}
+.contenedor:hover .posterright{
+	transform: scale(1.2);
+}
+.posterleft_2{
+	border: 10px solid #E6FEFF;
+	float: left;
+	margin-left: -410;
+	margin-top: 890;
+	width: 25%;
+	position: sticky;
+	transition: transform 1.0s;
+}
+.contenedor:hover .posterleft_2{
+	transform: scale(1.2);
+}
+.posterright_2{
+	border: 10px solid #E6FEFF;
+	float: right;
+	margin-right: -410;
+	margin-top: 890;
+	width: 25%;
+	position: sticky;
+	transition: transform 1.0s;
+}
+.contenedor:hover .posterright_2{
+	transform: scale(1.2);
+}
+.posterleft_3{
+	border: 10px solid #E6FEFF;
+	float: left;
+	margin-left: -410;
+	margin-top: 1800;
+	width: 25%;
+	position: sticky;
+	transition: transform 1.0s;
+}
+.contenedor:hover .posterleft_3{
+	transform: scale(1.2);
+}
+.posterright_3{
+	border: 10px solid #E6FEFF;
+	float: right;
+	margin-right: -410;
+	margin-top: 1800;
+	width: 25%;
+	position: sticky;
+	transition: transform 1.0s;
+}
+.contenedor:hover .posterright_3{
+	transform: scale(1.2);
+}
+button{
+	border: 5px solid #1C0257;
+	background-color: #D3FBFE;
+	border-radius: 12px;
+	font-size: 2em;
+	float: right;
+}

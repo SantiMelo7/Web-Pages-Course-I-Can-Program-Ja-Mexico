@@ -17,7 +17,7 @@ export class HomeComponent implements AfterViewInit {
       M.Collapsible.init(elems); // Re-inicializa el collapsible
     }
 
-    //Metodo para cerrar el menu 
+    //Metodo para cerrar el menu
     closeMenu() {
       const elems = document.querySelectorAll('.collapsible');
       const instances = M.Collapsible.getInstance(elems[0]);

@@ -1,0 +1,39 @@
+body {
+  background-color: aliceblue;
+}
+h1 {
+  color: white;
+  font-family: "Courier New", monospace;
+  font-size: 48px;
+  background-color: blue;
+  font-style: italic;
+  font-size: 50px;
+  background-image: url("flores/background.JPG");
+}
+
+.destacado {
+  color: black;
+}
+#Mi_parrafo {
+  color: green;
+}
+#recuadro {
+  background-color: cornflowerblue;
+  width: 400px;
+  height: 1000px;
+  padding: 50px;
+  margin: 100px;
+}
+h8 {
+  font-style: italic;
+  font-size: 50px;
+  color: blue;
+}
+p {
+  font-style: italic;
+  color: black;
+}
+p1 {
+  font-style: italic;
+  color: blue;
+}

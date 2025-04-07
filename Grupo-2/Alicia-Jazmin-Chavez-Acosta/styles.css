@@ -1,0 +1,148 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el pie de página quede al final */
+}
+
+
+/* Barra de navegación y título juntos */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el título y el menú */
+    align-items: center;
+    background-color: #2f9255;
+    padding: 10px 20px;
+    color: white;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Introducción */
+.intro {
+    text-align: left;
+    padding: 50px;
+    background-image: url('IMG/fondo3.avif'); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    color: rgb(26, 25, 25); /* Ajusta el color del texto según el contraste */
+ 
+}
+
+.intro h2 {
+    font-size: 32px;
+}
+
+.intro p {
+    text-align: left;
+    font-size: 18px;
+    color: #0f0f0f;
+}
+/* Estilo de la lista de países */
+.country-item {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+}
+
+.country-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.countries-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.country-info {
+    text-align: center;
+    padding: 20px;
+}
+
+.country-info img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Empuja el pie de página al final */
+}
+
+footer .footer-content p {
+    margin: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .countries-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .country-item {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilo para resaltar el enlace del país actual en el navbar */
+.navbar-list a.highlight {
+    color: #ffdd00; /* Color dorado para resaltar */
+    font-weight: bold;
+    text-decoration: underline;
+}
+ h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #0f0f0f;  
+ }

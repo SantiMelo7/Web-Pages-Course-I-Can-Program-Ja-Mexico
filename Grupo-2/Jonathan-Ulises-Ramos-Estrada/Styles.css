@@ -1,0 +1,64 @@
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* Estilo para el header */
+header {
+    font-family: Arial, Helvetica, sans-serif;    
+    background-color: #040e6b;
+    color: rgb(9, 198, 223);
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+  
+}
+
+/* Estilo para el título principal */
+h1 {
+    
+    font-size: 2.5em;
+    margin: 0;
+    color: white ;
+    
+}
+
+/* Estilo para la sección de contenido */
+section {
+    margin: 20px;
+    padding: 10px;
+    background-color: whitesmoke; 
+    box-shadow: 0 2px 10px rgba(133, 168, 214, 0.1);
+}
+
+/* Estilo para los subtítulos */
+h2 {
+    font-size: 2.5em;
+    color: rgb(243, 85, 11);
+    text-align: center;
+
+}
+
+/* Estilo para el párrafo */
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: black;
+   
+}
+
+
+/* Estilo para las imágenes */
+img {
+  
+    display: center;
+    margin: 30px auto;
+    border: 5px solid black;
+    border-radius: 8px;
+    gap: 80px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

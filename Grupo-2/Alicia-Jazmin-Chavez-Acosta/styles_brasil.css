@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    padding: 100px;
+    margin: 0;
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.text {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.text p {
+    margin-bottom: 10px;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Agrega un poco de estilo para mejorar la presentación en dispositivos pequeños */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section .image {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    section .content {
+        margin-right: 0;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    margin-top: auto;  /* Esto empuja el footer hacia abajo */
+}
+
+/* Navbar Fijo */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #56af4a;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000; /* Asegura que el navbar esté sobre otros elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: px;
+    padding: 30px;
+}
+
+.navbar-title {
+    font-size: 24px;
+    color: #e0dfd4; /* Este color solo afectará al título dentro del navbar */
+    margin: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Espaciado para que el contenido no quede debajo del navbar */
+header {
+    padding-top: 100px; /* Ajuste para evitar que el contenido quede tapado por el navbar */
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+section .content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+section .image {
+    width: 40%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+section:hover .image {
+    transform: scale(1.05);
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}

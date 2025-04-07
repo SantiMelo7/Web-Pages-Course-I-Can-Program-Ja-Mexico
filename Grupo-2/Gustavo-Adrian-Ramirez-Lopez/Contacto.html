@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Descubre Puerto Vallarta</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header>
+    <h1>Descubre Puerto Vallarta</h1>
+    <div class="buttons">
+        <a href="Inicio.html#inicio" class="button">Inicio</a>
+        <a href="Inicio.html#historia" class="button">Historia y Cultura</a>
+        <a href="Inicio.html#lugares" class="button">Lugares Turísticos</a>
+        <a href="Inicio.html#gastronomia" class="button">Gastronomía</a>
+        <a href="Inicio.html#actividades" class="button">Actividades y Entretenimiento</a>
+        <a href="Inicio.html#eventos" class="button">Eventos y Festividades</a>
+        <a href="galeria.html" class="button">Galería</a>
+        <a href="Contacto.html" class="button">Contacto</a>
+    </div>
+</header>
+
+<section class="about-section contact-section" id="contacto" style="margin-bottom: 120px;">
+    <h2>Contactame!</h2>
+
+    <div class="contact-info about-content">
+        <img src="Resources/persona.png" alt="Persona de contacto" style="width: 150px; border-radius: 8px;">
+        <div>
+            <p><strong>Gustavo Adrian Ramirez Lopez</strong></p>
+            <p><strong>Teléfono:</strong> 311 396 6164</p>
+            <p><strong>Email:</strong> gramirez3022@jal.conalep.edu.mx</p>
+            <p><strong>Matrícula:</strong> 221690349-8</p>
+        </div>
+    </div>
+
+    <form action="mailto:gramirez3022@jal.conalep.edu.mx" method="post" enctype="text/plain" style="margin-top: 20px;">
+        <label for="name">Tu Nombre:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Tu Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Tu Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+
+        <button type="submit">Enviar Mensaje</button>
+    </form>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Concesionaria de vehículos deportivos, de carreras y de colección. Encuentra los mejores autos con diseño exclusivo y tecnología avanzada.">
+    <meta name="keywords" content="vehículos deportivos, autos de carreras, autos de colección, concesionaria de vehículos, autos exclusivos">
+    <meta name="author" content="Tu Concesionaria">
+    <title>Concesionaria de Vehículos Deportivos y de Colección</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        header {
+            background: #212121;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: #f39c12;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 85%;
+            margin: 30px auto;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            color: #212121;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .vehicle-card {
+            display: inline-block;
+            width: 30%;
+            margin: 20px 1%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .vehicle-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .vehicle-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .vehicle-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .vehicle-info h3 {
+            font-size: 1.8em;
+            color: #212121;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .vehicle-info p {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 1.5em;
+            color: #e67e22;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        footer {
+            background-color: #212121;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        footer a {
+            color: #e67e22;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .vehicle-card {
+                width: 45%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .vehicle-card {
+                width: 100%;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 15px;
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Concesionaria de Vehículos Deportivos y de Colección</h1>
+        <p>La mejor selección de autos exclusivos para tu pasión por la velocidad</p>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Vehículos Nuevos</a>
+        <a href="#">Autos de Carreras</a>
+        <a href="#">Autos de Colección</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <section>
+            <h2 class="section-title">Vehículos Nuevos Deportivos</h2>
+            <div class="vehicle-card">
+                <img src="ferrari.jfif" alt="Ferrari F8 Tributo">
+                <div class="vehicle-info">
+                    <h3>Ferrari F8 Tributo</h3>
+                    <p>Un diseño icónico con potencia sin igual, ideal para los amantes de la velocidad.</p>
+                    <div class="price">$350,000</div>
+                </div>
+            </div>
+
+            <div class="vehicle-card">
+                <img src="lambo.jfif" alt="Lamborghini Aventador">
+                <div class="vehicle-info">
+                    <h3>Lamborghini Aventador</h3>
+                    <p>Un superdeportivo con un motor V12 que alcanza la perfección en cada curva.</p>
+                    <div class="price">$450,000</div>
+                </div>
+            </div>
+
+            <div class="vehicle-card">
+                <img src="porch.jfif" alt="Porsche 911 Turbo">
+                <div class="vehicle-info">
+                    <h3>Porsche 911 Turbo</h3>
+                    <p>Con un rendimiento excepcional y un diseño aerodinámico, el Porsche 911 es el sueño de cualquier conductor.</p>
+                    <div class="price">$200,000</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Autos de Carreras</h2>
+            <div class="vehicle-card">
+                <img src="mac.jfif" alt="McLaren 720S">
+                <div class="vehicle-info">
+                    <h3>McLaren 720S</h3>
+                    <p>Diseñado para las pistas, con tecnología avanzada y una aceleración asombrosa.</p>
+                    <div class="price">$350,000</div>
+                </div>
+            </div>
+
+            <div class="vehicle-card">
+                <img src="fer.jfif" alt="Ferrari 488 GTB">
+                <div class="vehicle-info">
+                    <h3>Ferrari 488 GTB</h3>
+                    <p>El Ferrari 488 GTB está hecho para alcanzar la velocidad máxima en un abrir y cerrar de ojos.</p>
+                    <div class="price">$400,000</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Autos de Colección</h2>
+            <div class="vehicle-card">
+                <img src="jaguar.jfif" alt="Jaguar E-Type">
+                <div class="vehicle-info">
+                    <h3>Jaguar E-Type</h3>
+                    <p>Un clásico atemporal que combina lujo, elegancia y exclusividad en su máxima expresión.</p>
+                    <div class="price">$200,000</div>
+                </div>
+            </div>
+
+            <div class="vehicle-card">
+                <img src="meche.jfif" alt="Mercedes-Benz 300SL">
+                <div class="vehicle-info">
+                    <h3>Mercedes-Benz 300SL</h3>
+                    <p>Un icono de la automoción, con un diseño innovador y motor impresionante.</p>
+                    <div class="price">$500,000</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Los Autos Más Caros</h2>
+            <div class="vehicle-card">
+                <img src="bugati.jfif" alt="Bugatti La Voiture Noire">
+                <div class="vehicle-info">
+                    <h3>Bugatti La Voiture Noire</h3>
+                    <p>Con un precio de más de $18 millones, es uno de los autos más exclusivos y caros del mundo. Su diseño de lujo y motor de 1,500 caballos de fuerza lo convierten en una leyenda.</p>
+                    <div class="price">$18,000,000</div>
+                </div>
+            </div>
+
+            <div class="vehicle-card">
+                <img src="roll.jfif" alt="Rolls-Royce Sweptail">
+                <div class="vehicle-info">
+                    <h3>Rolls-Royce Sweptail</h3>
+                    <p>Este vehículo único fue diseñado a medida para un cliente exclusivo, con un precio de aproximadamente $13 millones. Una obra maestra en la automoción de lujo.</p>
+                    <div class="price">$13,000,000</div>
+                </div>
+            </div>
+
+            <div class="vehicle-card">
+                <img src="pagani.jfif" alt="Pagani Zonda HP Barchetta">
+                <div class="vehicle-info">
+                    <h3>Pagani Zonda HP Barchetta</h3>
+                    <p>Con un precio de $17.5 millones, este superdeportivo tiene un motor V12 y una estructura que lo hace aún más deseado por los coleccionistas.</p>
+                    <div class="price">$17,500,000</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Concesionaria de Vehículos - Todos los derechos reservados.</p>
+        <p><a href="#">Política de Privacidad</a> | <a href="#">Términos de Uso</a></p>
+    </footer>
+
+</body>
+</html>

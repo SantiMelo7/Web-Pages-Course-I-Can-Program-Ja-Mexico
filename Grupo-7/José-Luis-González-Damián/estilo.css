@@ -1,0 +1,63 @@
+body{
+	background-image: url(fondow.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%  100%;
+	}
+
+h1{
+	text-align: center;
+}
+
+h2{
+	text-decoration: underline ;
+}
+
+.inicio1{
+	width: 1200px;
+	height: 300px;
+}
+
+.inicio2{
+	width: 700px;
+	height: 400px;
+	margin: 1% 10%;
+}
+
+
+.menu{
+	list-style: none;
+	padding: 0;
+	background: #092327;
+	width: 90%;
+	max-width: 700px;
+	margin: 0.0001% 30%;
+	position: fixed;
+
+}
+
+.menu li a{
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	display: block;
+}
+
+.menu li{
+	display: inline-block;
+	text-align: center;
+}
+
+.menu li a:hover{
+	background: #000000;
+}
+
+.cuadrado{
+	width: 1200px;
+	height: 2600px;
+	margin: 2%  15%;
+	background: #FFFFFF;
+
+	left: 300px;
+
+}

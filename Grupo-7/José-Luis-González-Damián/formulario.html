@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>formulario</title>
+<script>
+function validarEmail() {
+    var email = document.getElementById('email').value;
+    var arroba = email.indexOf('@');
+    var ultimaArroba = email.lastIndexOf('@');
+    
+    if(arroba > 0 && arroba == ultimaArroba && arroba < email.length - 1) {
+        alert('La dirección de correo es válida.');
+    } else {
+        alert('La dirección de correo no es válida.');
+    }
+}
+</script>
+</head>
+<body onload="mostrarSaludo()">
+<h1 id="fecha"></h1>
+
+  <link rel="stylesheet" type="text/css" href="estilo7.css">
+</head>
+<body>
+
+    <ul class="menu">
+           <li><a href="file:///D:/mi%20pagina/DINOSAURIOS.html">inicio</a></li>
+           <li><a href="file:///D:/mi%20pagina/las%203%20eras.html">las 3 eras</a></li>
+           <li><a href="file:///D:/mi%20pagina/carnivoros%20herbivoros%20y%20omnivoros.html">carnivoros herbivoros y omnivoros</a></li>
+           <li><a href="file:///D:/mi%20pagina/los%20dinosaurios%20mas%20conocidos.html">dinosaurios mas conocidos</a></li>
+           <li><a href="file:///D:/mi%20pagina/extincion%20de%20los%20dinosaurios.html">extincion</a></li>
+           <li><a href="file:///D:/mi%20pagina/los%20mejores%20medios%20de%20entretenimiento%20sobre%20dinosurios.html">medios de entretenimiento sobre dinosurios</a></li>
+           <li><a href="file:///D:/mi%20pagina/formulario.html">formulario</a></li>   
+    </ul>
+
+ <form action="procesar.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+        <label>Sexo:</label>
+        <input type="radio" id="sexo-m" name="sexo" value="Masculino" required>
+        <br>
+        <label for="sexo-m">Masculino</label>
+        <input type="radio" id="sexo-f" name="sexo" value="Femenino">
+        <br>
+        <label for="sexo-f">Femenino</label>
+        <label for="gustan-dinosaurios">Por que te gustan los dinosaurios?</label>
+        <textarea id="gustan-dinosaurios" name="gustan-dinosaurios" rows="4" required></textarea>
+        <label for="dinosaurio-favorito">Dinosaurio favorito:</label>
+        <input type="text" id="dinosaurio-favorito" name="dinosaurio-favorito" required>
+        <input type="text" id="email" placeholder="Introduce tu correo electrónico">
+<button onclick="validarEmail()">Validar Email</button>
+        <a href="https://www.youtube.com/watch?v=UBex32HVAqo">Enviar</a>
+   </form>
+
+</body>
+</html>

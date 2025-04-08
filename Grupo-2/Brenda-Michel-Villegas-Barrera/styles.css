@@ -1,0 +1,10 @@
+function showContent(section) {
+    // Ocultar todas las secciones
+    var sections = document.querySelectorAll('.content-section');
+    sections.forEach(function(sec) {
+        sec.style.display = 'none';
+    });
+
+    // Mostrar la sección correspondiente
+    document.getElementById(section).style.display = 'block';
+}

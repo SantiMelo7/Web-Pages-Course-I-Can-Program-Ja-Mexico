@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Juego</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background-color: #111;
+      color: white;
+    }
+    #game-area {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      margin: 30px auto;
+      background-color: #222;
+      border: 2px solid #00ffcc;
+      overflow: hidden;
+    }
+    .target {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: #00ffcc;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #score {
+      font-size: 24px;
+    }
+    #start-btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #00ffcc;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Haz clic en el cuadrado</h1>
+  <p id="score">Puntos: 0</p>
+  <div id="game-area"></div>
+  <button id="start-btn">Comenzar</button>
+
+  <script>
+    const gameArea = document.getElementById("game-area");
+    const scoreDisplay = document.getElementById("score");
+    const startBtn = document.getElementById("start-btn");
+
+    let score = 0;
+    let gameInterval;
+    let target;
+
+    function randomPosition(max) {
+      return Math.floor(Math.random() * (max - 50)); // restamos 50 para no salir del área
+    }
+
+    function createTarget() {
+      if (target) {
+        target.remove(); // borra el anterior si existe
+      }
+
+      target = document.createElement("div");
+      target.className = "target";
+      target.style.top = randomPosition(400) + "px";
+      target.style.left = randomPosition(600) + "px";
+
+      target.onclick = () => {
+        score++;
+        scoreDisplay.textContent = "Puntos: " + score;
+        createTarget();
+      };
+
+      gameArea.appendChild(target);
+    }
+
+    function startGame() {
+      score = 0;
+      scoreDisplay.textContent = "Puntos: 0";
+      createTarget();
+
+      clearInterval(gameInterval); // limpia si ya había un juego corriendo
+
+      gameInterval = setInterval(() => {
+        createTarget();
+      }, 1000); // cada segundo cambia el cuadrado
+    }
+
+    startBtn.addEventListener("click", startGame);
+  </script>
+</body>
+</html>

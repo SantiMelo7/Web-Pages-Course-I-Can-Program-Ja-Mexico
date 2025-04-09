@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rápidos y Furiosos Autos</title>
+  <link rel="icon" type="text/css" href="imagen/icon.png">
+  <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Rápidos y Furiosos Autos</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#carros">Carros</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="container">
+      <h2>Vive la adrenalina de la saga</h2>
+      <p>Adquiere los autos más icónicos de Rápidos y Furiosos. ¡Solo para verdaderos fanáticos!</p>
+      <a href="#carros" class="btn">Ver catálogo</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="carros" class="carros container">
+      <h2>Carros en venta</h2>
+      <div class="galeria">
+        <div class="carro">
+          <img src="imagen/dom.jpg" alt="Dodge Charger" />
+          <h3>Dodge Charger 1970</h3>
+          <p>El muscle car clásico de Dom Toretto. Potencia brutal con diseño imponente.</p>
+          <span>$1,200,000 MXN</span>
+          <button>Comprar</button>
+        </div>
+
+        <div class="carro">
+          <img src="imagen/sky.jpg" alt="Skyline GT-R" />
+          <h3>Nissan Skyline GT-R R34</h3>
+          <p>El favorito de Brian. Turbo, velocidad y clase japonesa al máximo nivel.</p>
+          <span>$950,000 MXN</span>
+          <button>Comprar</button>
+        </div>
+
+        <div class="carro">
+          <img src="imagen/toyota.jpg" alt="Toyota Supra" />
+          <h3>Toyota Supra MK4</h3>
+          <p>Modificado al límite, listo para las carreras callejeras.</p>
+          <span>$870,000 MXN</span>
+          <button>Comprar</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios" class="beneficios">
+      <div class="container">
+        <h2>¿Por qué comprar con nosotros?</h2>
+        <ul>
+          <li>Autos certificados y personalizados igual que en la película</li>
+          <li>Entrega en todo México</li>
+          <li>Atención exclusiva para fans de la saga</li>
+          <li>Planes de pago y garantía de 1 año</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto container">
+      <h2>Contáctanos</h2>
+      <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" required />
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" required/>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rápidos y Furiosos Autos | Página creada por Alexia Garcia</p>
+  </footer>
+</body>
+</html>

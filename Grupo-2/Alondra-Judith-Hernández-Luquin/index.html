@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Detengamos la Deforestación</title>
+  <link rel="icon" href="logoico.ico" type="image/x-icon">
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-image: url('fondopag.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    /* Logo en la esquina superior derecha */
+    #logo {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+      height: auto;
+      z-index: 1000;
+    }
+
+    header {
+      padding-top: 80px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 40px 20px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    section img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: #2e8b57;
+      margin-top: 0;
+    }
+
+    p, ul {
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #2e8b57;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    #top-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #2e8b57;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+      z-index: 1000;
+    }
+
+    #top-btn:hover {
+      background-color: #1f6b45;
+    }
+
+    /* === ANIMACIONES SCROLL === */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fade-in.hidden {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo en la esquina superior derecha -->
+  <img id="logo" src="logo.jpg" alt="Logo Amigos del Bosque">
+
+  <header>
+    <h1>Detengamos la Deforestación</h1>
+    <p>Conciencia para proteger nuestros bosques</p>
+  </header>
+
+  <section id="importancia" class="fade-in">
+    <img src="foto1.jpg" alt="Bosque talado">
+    <h2><a href="importancia.html">¿Por qué la deforestación importa y cómo todavía la podríamos frenar?</a></h2>
+    <p>La deforestación es una de las principales amenazas para el equilibrio ecológico del planeta...</p>
+    <p>Aún podemos frenarla mediante políticas de conservación, control de la tala ilegal y consumo responsable...</p>
+  </section>
+
+  <section id="arboles" class="fade-in">
+    <img src="foto2.jpg" alt="Árboles verdes">
+    <h2><a href="arboles.html">¿Por qué son importantes los árboles y los bosques?</a></h2>
+    <p>Los árboles no solo nos proporcionan oxígeno, también filtran el aire, regulan el clima y previenen inundaciones.</p>
+    <p>Muchas comunidades indígenas dependen de los bosques para su cultura y medicina tradicional.</p>
+  </section>
+
+  <section id="causas" class="fade-in">
+    <img src="foto3.jpg" alt="Máquina talando árboles">
+    <h2><a href="causas.html">Causas de la deforestación</a></h2>
+    <p>Las causas más comunes incluyen:</p>
+    <ul>
+      <li><strong>Agricultura extensiva:</strong> Cultivos y ganadería.</li>
+      <li><strong>Industria maderera:</strong> Tala descontrolada.</li>
+      <li><strong>Urbanización:</strong> Expansión de ciudades.</li>
+      <li><strong>Incendios forestales:</strong> Muchos provocados por el hombre.</li>
+    </ul>
+  </section>
+
+  <section id="detener" class="fade-in">
+    <img src="foto4.jpg" alt="Bosque seco y muerto">
+    <h2><a href="detener.html">¿Por qué es importante detener la deforestación?</a></h2>
+    <p>La pérdida de bosques afecta el aire, el agua, la biodiversidad y contribuye al cambio climático y la desertificación.</p>
+  </section>
+
+  <section id="acciones" class="fade-in">
+    <img src="foto5.jpg" alt="Personas plantando árboles">
+    <h2><a href="acciones.html">¿Qué se puede hacer contra la deforestación?</a></h2>
+    <ul>
+      <li>Apoyar proyectos de reforestación</li>
+      <li>Consumir productos sostenibles</li>
+      <li>Reducir uso de papel</li>
+      <li>Educar a otros</li>
+      <li>Participar en campañas ecológicas</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Amigos del Bosque | Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Botón para volver arriba -->
+  <button id="top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+  <script>
+    // Mostrar botón "volver arriba"
+    window.onscroll = function () {
+      const btn = document.getElementById("top-btn");
+      btn.style.display = document.documentElement.scrollTop > 200 ? "block" : "none";
+    };
+
+    // Animación de aparecer y desaparecer (fade-in & fade-out)
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+      threshold: 0.2 // Se activa cuando el 20% de la sección es visible
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Si la sección es visible, añadir la clase "visible"
+          entry.target.classList.add('visible');
+          entry.target.classList.remove('hidden');
+        } else {
+          // Si la sección no es visible, añadir la clase "hidden"
+          entry.target.classList.add('hidden');
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      // Inicializamos las secciones con fade-out (desaparecerán al inicio)
+      fader.classList.add('fade-in');
+      appearOnScroll.observe(fader);
+    });
+  </script>
+
+</body>
+</html>
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Importancia de la Deforestación</title>
+  <link rel="icon" href="logoico.ico" type="image/x-icon">
+
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-image: url('fondopag.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    #logo {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 100px;
+      height: auto;
+      z-index: 1000;
+    }
+
+    header {
+      padding-top: 80px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 40px 20px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    section img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: #2e8b57;
+      margin-top: 0;
+    }
+
+    p, ul {
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #2e8b57;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    #top-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #2e8b57;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+      z-index: 1000;
+    }
+
+    #top-btn:hover {
+      background-color: #1f6b45;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fade-in.hidden {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  </style>
+</head>
+<body>
+
+  <img id="logo" src="logo.jpg" alt="Logo Amigos del Bosque">
+
+  <header>
+    <h1>Importancia de la Deforestación</h1>
+  </header>
+
+  <section id="importancia" class="fade-in">
+    <h2>¿Por qué la deforestación importa y cómo todavía la podríamos frenar?</h2>
+    <p>La deforestación es una de las principales amenazas para el equilibrio ecológico del planeta. Los bosques son cruciales para regular el clima, mantener la biodiversidad y proporcionar oxígeno. La destrucción de estos ecosistemas provoca la pérdida de innumerables especies y afecta nuestra calidad de vida.</p>
+    <p>Aún podemos frenarla mediante políticas de conservación, control de la tala ilegal y consumo responsable de productos derivados de los bosques.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Amigos del Bosque</p>
+    <p><a href="deforestacion.html" style="color:white;">Volver a la página principal</a></p>
+  </footer>
+
+  <button id="top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+  <script>
+    window.onscroll = function () {
+      const btn = document.getElementById("top-btn");
+      btn.style.display = document.documentElement.scrollTop > 200 ? "block" : "none";
+    };
+
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+      threshold: 0.2
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          entry.target.classList.remove('hidden');
+        } else {
+          entry.target.classList.add('hidden');
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      fader.classList.add('fade-in');
+      appearOnScroll.observe(fader);
+    });
+  </script>
+
+</body>
+</html>
+

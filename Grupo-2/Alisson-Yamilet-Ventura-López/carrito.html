@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras - Alis Boutique</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f9f4f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #fc70a7, #f9b8d1);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      color: #6b2d69;
+      margin: 0;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .contenedor-carrito {
+      padding: 40px 20px;
+    }
+
+    .producto-carrito {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .producto-carrito img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .producto-carrito-info {
+      margin-left: 15px;
+      flex-grow: 1;
+    }
+
+    .producto-carrito-info h3 {
+      font-size: 1.2em;
+      color: #6b2d69;
+      margin: 10px 0;
+    }
+
+    .producto-carrito-info p {
+      font-size: 1.1em;
+      color: #888;
+    }
+
+    .eliminar {
+      background-color: #f44336;
+      color: white;
+      font-size: 1em;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .eliminar:hover {
+      background-color: #e60000;
+    }
+
+    .total-carrito {
+      text-align: center;
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+
+    .boton-compra {
+      background-color: #6b2d69;
+      color: white;
+      font-size: 1.2em;
+      padding: 15px 50px;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    .boton-compra:hover {
+      background-color: #9c4996;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Carrito de Compras - Alis Boutique</h1>
+  </header>
+
+  <div class="contenedor-carrito" id="carrito-container">
+    <!-- Los productos del carrito se mostrarán aquí -->
+  </div>
+
+  <div class="total-carrito" id="total-carrito">
+    <!-- El total del carrito se mostrará aquí -->
+  </div>
+
+  <div class="boton-compra-container" style="text-align: center; margin-top: 40px;">
+    <a href="#" class="boton-compra" onclick="finalizarCompra()">Finalizar Compra</a>
+  </div>
+
+  <script>
+    // Mostrar productos del carrito
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    const carritoContainer = document.getElementById('carrito-container');
+    const totalCarrito = document.getElementById('total-carrito');
+
+    if (carrito.length === 0) {
+      carritoContainer.innerHTML = '<p>No hay productos en tu carrito.</p>';
+    } else {
+      let total = 0;
+      carrito.forEach((producto, index) => {
+        const productoCarrito = document.createElement('div');
+        productoCarrito.className = 'producto-carrito';
+        productoCarrito.innerHTML = `
+          <img src="${producto.imagen}" alt="${producto.nombre}">
+          <div class="producto-carrito-info">
+            <h3>${producto.nombre}</h3>
+            <p>$${producto.precio}</p>
+            <button class="eliminar" onclick="eliminarProducto(${index})">Eliminar</button>
+          </div>
+        `;
+        carritoContainer.appendChild(productoCarrito);
+        total += producto.precio;
+      });
+
+      totalCarrito.innerHTML = `Total: $${total.toFixed(2)}`;
+    }
+
+    // Eliminar producto del carrito
+    function eliminarProducto(index) {
+      carrito.splice(index, 1); // Eliminar producto del carrito
+      localStorage.setItem('carrito', JSON.stringify(carrito)); // Actualizar en localStorage
+      location.reload(); // Recargar página para reflejar cambios
+    }
+
+    // Función para finalizar la compra
+    function finalizarCompra() {
+      alert('¡Compra realizada con éxito!');
+      localStorage.removeItem('carrito'); // Limpiar carrito
+      window.location.href = 'index.html'; // Redirigir a la página principal
+    }
+  </script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo de Productos - Alis Boutique</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f9f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #fc70a7, #f9b8d1);
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 3px solid #d7a3c3;
+      position: relative;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      color: #6b2d69;
+      margin: 0;
+      letter-spacing: 3px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .carrito-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #6b2d69;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .carrito-btn:hover {
+      background-color: #9c4996;
+    }
+
+    .contenedor-productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .producto {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .producto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .producto img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .producto-info h3 {
+      font-size: 1.2em;
+      color: #6b2d69;
+      margin: 10px 0;
+    }
+
+    .producto-info p {
+      font-size: 1.1em;
+      color: #888;
+    }
+
+    .boton-compra {
+      background-color: #6b2d69;
+      color: white;
+      font-size: 1.1em;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      margin-top: 15px;
+      display: inline-block;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .boton-compra:hover {
+      background-color: #9c4996;
+      transform: translateY(-3px);
+    }
+
+    .volver {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .volver a {
+      font-size: 1.2em;
+      color: #6b2d69;
+      text-decoration: none;
+      padding: 10px 30px;
+      border-radius: 30px;
+      border: 2px solid #6b2d69;
+      transition: all 0.3s ease;
+    }
+
+    .volver a:hover {
+      background-color: #6b2d69;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Alis Boutique</h1>
+    <a href="carrito.html" class="carrito-btn">🛒 Ver Carrito</a>
+  </header>
+
+  <div class="contenedor-productos" id="productos-container">
+    <!-- Productos aquí con botones -->
+  </div>
+
+  <div class="volver">
+    <a href="index.html">Volver a la página principal</a>
+  </div>
+
+  <script>
+    const productos = [
+      { nombre: 'Blusa Casual', precio: 19.99, imagen: 'casual.jpg' },
+      { nombre: 'Pantalón Slim', precio: 24.99, imagen: 'pantalon.jpg' },
+      { nombre: 'Zapatos Elegantes', precio: 39.99, imagen: 'zapatos.jpg' },
+      { nombre: 'Chaqueta de Cuero', precio: 59.99, imagen: 'chaqueta.jpg' },
+      { nombre: 'Bufanda de Lana', precio: 12.99, imagen: 'bufanda.jpg' },
+      { nombre: 'Reloj de Pulsera', precio: 49.99, imagen: 'reloj.jpg' }
+    ];
+
+    const contenedor = document.getElementById('productos-container');
+
+    productos.forEach((producto, index) => {
+      const card = document.createElement('div');
+      card.className = 'producto';
+      card.innerHTML = `
+        <img src="${producto.imagen}" alt="${producto.nombre}">
+        <div class="producto-info">
+          <h3>${producto.nombre}</h3>
+          <p>$${producto.precio}</p>
+          <button class="boton-compra" onclick="agregarAlCarrito(${index})">Agregar al carrito</button>
+        </div>
+      `;
+      contenedor.appendChild(card);
+    });
+
+    function agregarAlCarrito(index) {
+      const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+      carrito.push(productos[index]);
+      localStorage.setItem('carrito', JSON.stringify(carrito));
+      alert(`"${productos[index].nombre}" se agregó al carrito 🛍️`);
+    }
+  </script>
+</body>
+</html>
+
+

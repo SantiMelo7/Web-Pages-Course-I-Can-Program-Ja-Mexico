@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Barbería Estilo Perfecto</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #6DD5ED, #2193b0);
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid #27ae60;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .boton {
+            background-color: #27ae60;
+            color: white;
+            padding: 15px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .boton:hover {
+            background-color: #219150;
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .rostro {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .rostro:hover {
+            transform: translateY(-10px);
+        }
+
+        .rostro h2 {
+            color: #27ae60;
+            font-size: 24px;
+        }
+
+        .rostro img {
+            max-width: 200px;
+            border-radius: 10px;
+            display: block;
+            margin-top: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .rostro img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 5px solid #27ae60;
+        }
+
+        footer a {
+            color: #27ae60;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #219150;
+        }
+
+        .abierto {
+            color: #2ecc71;
+            font-weight: bold;
+        }
+
+        .cerrado {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        a {
+            color: #27ae60;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #219150;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Barbería Estilo Perfecto</h1>
+    <p>Encuentra el corte ideal para tu tipo de rostro</p>
+    <a href="#cortes"><button class="boton">Buscar tu tipo de corte ideal</button></a>
+</header>
+
+<section id="cortes">
+    <!-- Links que llevan a cada catálogo de cortes -->
+    <div class="rostro">
+        <h2><a href="#catalogo-ovalado">Rostro Ovalado</a></h2>
+        <p>Este tipo de rostro es equilibrado y le va bien casi cualquier tipo de corte. Se recomienda el corte “Fade clásico” o el “Pompadour”.</p>
+        <img src="https://www.avon.com.ni/dam/nola-assets/customPage/suRostroSuCorte/rostro-ovalado.jpg" alt="Corte para rostro ovalado">
+        <p>Este tipo de rostro es equilibrado y le va bien casi cualquier tipo de corte. Se recomienda el corte “Fade clásico” o el “Pompadour”.</p>
+    </div>
+
+    <div class="rostro">
+        <h2><a href="#catalogo-cuadrado">Rostro Cuadrado</a></h2>
+        <p>Rasgos marcados y mandíbula fuerte. Se recomiendan cortes con volumen arriba y cortos a los lados como el “Undercut” o el “Crew Cut”.</p>
+        <img src="https://optilens.cl/wp-content/uploads/2020/09/cara-cuadrada-hombre-optilens.jpg" alt="Corte para rostro cuadrado">
+        <p>Rasgos marcados y mandíbula fuerte. Se recomiendan cortes con volumen arriba y cortos a los lados como el “Undercut” o el “Crew Cut”.</p>
+    </div>
+
+    <div class="rostro">
+        <h2><a href="#catalogo-redondo">Rostro Redondo</a></h2>
+        <p>Para equilibrar el rostro, se recomiendan cortes con más altura como el “Spiky Hair” o el “Flat Top”. Evitar cortes demasiado redondeados.</p>
+        <img src="https://static.wixstatic.com/media/ab656c_bb7d4e87a8524facb7dd476e92714507.jpg/v1/fill/w_280,h_343,al_c,lg_1,q_80,enc_avif,quality_auto/ab656c_bb7d4e87a8524facb7dd476e92714507.jpg" alt="Corte para rostro redondo">
+        <p>Para equilibrar el rostro, se recomiendan cortes con más altura como el “Spiky Hair” o el “Flat Top”. Evitar cortes demasiado redondeados.</p>
+    </div>
+
+    <div class="rostro">
+        <h2><a href="#catalogo-alargado">Rostro Alargado</a></h2>
+        <p>Evita agregar más altura. Cortes como el “Buzz Cut” o el “Corte César” ayudan a equilibrar las proporciones.</p>
+        <img src="https://massidi.com/wp-content/uploads/2023/07/rostro-diamante-300x259.png" alt="Corte para rostro alargado">
+        <p>Evita agregar más altura. Cortes como el “Buzz Cut” o el “Corte César” ayudan a equilibrar las proporciones.</p>
+    </div>
+</section>
+
+<!-- Sección de los catálogos de cortes debajo de la sección principal -->
+<section id="catalogo-ovalado">
+    <h1>Cortes ideales para rostro ovalado</h1>
+    <div class="corte">
+        <h2>Fade Clásico</h2>
+        <p>Un corte de cabello que proporciona una transición suave entre el cabello corto en los lados y el largo en la parte superior.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr9QAxOBlJpm4Wm6m2-TQg-IyaceXxkmi3-aRI3Wy68cis8h6pzOQJsVkvrkETW5gVvXo&usqp=CAU" alt="Corte fade clásico">
+    </div>
+
+    <div class="corte">
+        <h2>Pompadour</h2>
+        <p>Este corte es elegante y con mucho volumen en la parte superior, mientras que los lados se mantienen cortos.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9PVhE5rRdf5zW85kxxQGYP-poFOxmY3f8Kg&s" alt="Corte pompadour">
+    </div>
+</section>
+
+<section id="catalogo-cuadrado">
+    <h1>Cortes ideales para rostro cuadrado</h1>
+    <div class="corte">
+        <h2>Undercut</h2>
+        <p>Un corte moderno que mantiene los lados muy cortos y el volumen en la parte superior.</p>
+        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1200,h=630,fit=crop,f=jpeg/dOq7pw9NXrH0vV4l/copia-A1arVXba3bU5P9DV.jpg" alt="Corte undercut">
+    </div>
+
+    <div class="corte">
+        <h2>Crew Cut</h2>
+        <p>Corte corto y limpio que funciona bien con una mandíbula fuerte y rasgos marcados.</p>
+        <img src="https://i.pinimg.com/474x/11/5c/86/115c866933c5a7794c0e2c5b3ad075af.jpg" alt="Corte crew cut">
+    </div>
+</section>
+
+<section id="catalogo-redondo">
+    <h1>Cortes ideales para rostro redondo</h1>
+    <div class="corte">
+        <h2>Spiky Hair</h2>
+        <p>Corte con más altura para crear ángulos que equilibran las proporciones del rostro redondo.</p>
+        <img src="https://i.pinimg.com/564x/66/37/65/6637655dfa6f5e3e8f4413815f81da00.jpg" alt="Corte spiky hair">
+    </div>
+
+    <div class="corte">
+        <h2>Flat Top</h2>
+        <p>Corte recto en la parte superior que agrega altura y evita que el rostro se vea más redondo.</p>
+        <img src="https://www.menshairstylesnow.com/wp-content/uploads/2022/06/flat-top-haircut-1.jpg" alt="Corte flat top">
+    </div>
+</section>
+
+<section id="catalogo-alargado">
+    <h1>Cortes ideales para rostro alargado</h1>
+    <div class="corte">
+        <h2>Buzz Cut</h2>
+        <p>Corte de cabello corto que ayuda a equilibrar un rostro alargado.</p>
+        <img src="data:image/webp;base64,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" alt="Corte buzz cut">
+    </div>
+
+    <div class="corte">
+        <h2>Corte César</h2>
+        <p>Corte de cabello corto y recto en la parte superior, ideal para equilibrar la longitud del rostro.</p>
+        <img src="data:image/jpeg;base64,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" alt="Corte César">
+    </div>
+</section>
+
+<footer>
+    <p>📍 Colonia Primavera #575, Puerto Vallarta</p>
+    <p>📞 Teléfono: <a href="tel:3222136845" style="color: #12bd59;">322 213 6845</a></p>
+    <p>✉️ Correo: contactobarbeshop1819@gmail.com</p>
+    <p>⏰ Horario: Lunes a Viernes de 10:00 AM a 8:00 PM, Sábados de 10:00 AM a 2:00 PM, Domingos cerrado</p>
+</footer>
+
+</body>
+</html>

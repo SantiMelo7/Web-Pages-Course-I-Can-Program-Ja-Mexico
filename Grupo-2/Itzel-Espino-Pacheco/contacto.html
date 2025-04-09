@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - One Size O/S</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>One Size O/S</h1>
+    <nav>
+      <button class="nav-btn" onclick="navigate('index.html')">Inicio</button>
+      <button class="nav-btn" onclick="navigate('productos.html')">Productos</button>
+      <button class="nav-btn" onclick="navigate('contacto.html')">Contacto</button>
+      <button class="nav-btn" onclick="navigate('massobre.html')">Más sobre</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contacto</h2>
+    <form id="contact-form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="comentario">Comentario:</label>
+      <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+      <button type="submit" class="contact-btn">Enviar</button>
+    </form>
+
+    <h3>Encuesta de satisfacción</h3>
+    <form id="survey-form">
+      <label for="satisfaction">¿Cómo calificarías nuestro sitio web?</label><br>
+      <input type="radio" name="satisfaction" value="Excelente" id="excelente" required>
+      <label for="excelente">Excelente</label><br>
+      <input type="radio" name="satisfaction" value="Bueno" id="bueno">
+      <label for="bueno">Bueno</label><br>
+      <input type="radio" name="satisfaction" value="Regular" id="regular">
+      <label for="regular">Regular</label><br>
+      <button type="submit" class="contact-btn">Enviar encuesta</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 One Size O/S</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

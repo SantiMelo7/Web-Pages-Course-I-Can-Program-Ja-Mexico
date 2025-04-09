@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .data-container {
+            margin-top: 30px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Formulario de Registro -->
+    <div class="form-container" id="formContainer">
+        <h2>Formulario de Registro</h2>
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Nombre" required><br>
+            <input type="text" id="lastname" placeholder="Apellidos" required><br>
+            <input type="number" id="age" placeholder="Edad" required><br>
+            <input type="email" id="email" placeholder="Correo electrónico" required><br>
+            <input type="password" id="password" placeholder="Contraseña" required><br>
+            <a href="pagina 5.html" class="btn" target="_blank">Siguiente</a>
+        </form>
+    </div>
+
+    <!-- Mostrar los datos ingresados -->
+    <div class="data-container" id="dataContainer" style="display:none;">
+        <h3>Datos Registrados</h3>
+        <p><strong>Nombre:</strong> <span id="displayName"></span></p>
+        <p><strong>Apellidos:</strong> <span id="displayLastname"></span></p>
+        <p><strong>Edad:</strong> <span id="displayAge"></span></p>
+        <p><strong>Correo:</strong> <span id="displayEmail"></span></p>
+        <p><strong>Contraseña:</strong> <span id="displayPassword"></span></p>
+    </div>
+
+    <script>
+        function submitForm() {
+            // Obtener los valores del formulario
+            const name = document.getElementById('name').value;
+            const lastname = document.getElementById('lastname').value;
+            const age = document.getElementById('age').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Validar que todos los campos estén llenos
+            if (name && lastname && age && email && password) {
+                // Mostrar los datos ingresados
+                document.getElementById('displayName').textContent = name;
+                document.getElementById('displayLastname').textContent = lastname;
+                document.getElementById('displayAge').textContent = age;
+                document.getElementById('displayEmail').textContent = email;
+                document.getElementById('displayPassword').textContent = password;
+
+                // Ocultar el formulario y mostrar los datos
+                document.getElementById('formContainer').style.display = 'none';
+                document.getElementById('dataContainer').style.display = 'block';
+            } else {
+                alert("Por favor, complete todos los campos.");
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes - Entre lo Oculto y lo Real</title>
+    <link rel="stylesheet" href="look.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Entre lo Oculto y lo Real</h1>
+            <p>Tu fuente de contenido paranormal</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="cuerpo.html">Inicio</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="imagenes.html">Imágenes</a></li>
+                <li><a href="historias.html">Historias</a></li>
+                <li><a href="foro.html">Foro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Botón de inicio de sesión lateral -->
+    <div class="login-sidebar">
+        <button class="login-sidebar-button open-login">Iniciar Sesión</button>
+    </div>
+
+    <main>
+        <section class="content-section">
+            <h2>Imágenes Paranormales</h2>
+            <div class="image-gallery">
+                <!-- Las imágenes se cargarán dinámicamente -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Login -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit">Iniciar Sesión</button>
+                <p>¿No tienes cuenta? <a href="#" id="register-link">Regístrate aquí</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Registro -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Registro</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="new-username">Usuario:</label>
+                    <input type="text" id="new-username" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-password">Contraseña:</label>
+                    <input type="password" id="new-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirmar Contraseña:</label>
+                    <input type="password" id="confirm-password" required>
+                </div>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Sobre Nosotros</h3>
+                <p>Paranormal Hub es tu destino para explorar el mundo de lo inexplicable.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="cuerpo.html">Inicio</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="imagenes.html">Imágenes</a></li>
+                    <li><a href="historias.html">Historias</a></li>
+                    <li><a href="foro.html">Foro</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-envelope"></i> info@paranormalhub.com</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Paranormal Hub. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="code.js"></script>
+</body>
+</html> 

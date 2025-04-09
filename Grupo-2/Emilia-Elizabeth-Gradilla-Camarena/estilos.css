@@ -1,0 +1,167 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:#c2185b /* Rosa pastel suave */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height para que el footer esté al fondo */
+}
+
+header {
+  background-color: #f48fb1; /* Rosa pastel */
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+.nav-btn {
+  background-color: #f8bbd0; /* Rosa muy suave */
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-btn:hover {
+  background-color: #f48fb1;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  flex-grow: 1; /* Asegura que el main ocupe el espacio disponible */
+  padding: 20px;
+  text-align: center;
+}
+
+h2, h3 {
+  color: #c2185b; /* Rosa fuerte */
+}
+
+.productos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.producto {
+  text-align: center;
+  background-color: #fce4ec; /* Rosa claro */
+  border-radius: 8px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.producto img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.producto button {
+  background-color: #f48fb1;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.producto button:hover {
+  background-color: #c2185b;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.producto button:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #f48fb1; /* Rosa pastel */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  margin-top: auto; /* Asegura que el footer siempre quede al fondo */
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* Formulario de contacto */
+form {
+  background-color: #fce4ec;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+form button {
+  background-color: #f48fb1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #c2185b;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form button:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}

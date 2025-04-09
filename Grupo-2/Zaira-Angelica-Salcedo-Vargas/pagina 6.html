@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .welcome-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            color: #4CAF50; /* Verde para bienvenida */
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            padding: 20px 40px;
+            background-color: #f44336; /* Rojo para el botón */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #d32f2f; /* Rojo más oscuro al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome-container">
+        <h2>¡Bienvenidos!</h2>
+        <p>Si necesitas ayuda, solo haz clic en este botón y la ayuda irá en camino.</p>
+        <button class="btn" onclick="helpMe()">Help Me</button>
+    </div>
+
+    <script>
+        function helpMe() {
+            alert("La ayuda va en camino, resguárdese en un lugar seguro.");
+        }
+    </script>
+
+</body>
+</html>

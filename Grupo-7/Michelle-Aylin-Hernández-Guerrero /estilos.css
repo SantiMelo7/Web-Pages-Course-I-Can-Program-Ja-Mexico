@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  background-color: #ffb347;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 2.5em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=1400&q=80");
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 48px;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.hero a {
+  background-color: #fff;
+  color: #ff8c42;
+  position: relative;
+  top: 2rem;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #ffd699;
+  transform: scale(1.05);
+}
+
+/* MASCOTAS */
+#mascotas h2 {
+  text-align: center;
+  color: #ff8c42;
+  margin: 40px 0 20px;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.mascota {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mascota:hover {
+  transform: scale(1.03);
+}
+
+.mascota img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.mascota h3 {
+  margin-top: 10px;
+  color: #444;
+}
+
+.mascota p {
+  font-size: 14px;
+  color: #666;
+}
+
+.mascota button {
+  margin-top: 10px;
+  background-color: #ff8c42;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mascota button:hover {
+  background-color: #ffa765;
+}
+
+/* CONTACTO */
+
+.contacto {
+  padding: 1.2rem;
+}
+
+.contacto h2 {
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #ff8c42;
+}
+
+.contacto form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.contacto button {
+  background-color: #ff8c42;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.contacto button:hover {
+  background-color: #ffa765;
+}
+
+/* FOOTER */
+footer {
+  background-color: #ffb347;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mascota {
+    width: 90%;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}

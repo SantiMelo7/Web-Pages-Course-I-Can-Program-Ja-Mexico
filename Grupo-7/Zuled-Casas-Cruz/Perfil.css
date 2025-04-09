@@ -1,0 +1,129 @@
+body {
+    background: #c4b6a5; 
+    color: black;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+h1{
+     font-family: Fantasy;
+    opacity: 0.7; 
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1e1a15;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: Monaco, monospace;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;  
+}
+
+
+
+li {
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 1.5; 
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+    
+}
+
+
+li a:hover, .dropbtn:hover {
+    transform: scale(1.1); 
+    background-color: #3c372f; 
+}
+
+.cuadro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: #3c372f;
+    border: 2px solid #3c3531;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 1000px;
+    gap: 20px;
+    font-family: Monaco, monospace;
+ }
+.cuadro img {
+    width: 250px; 
+    height: auto; 
+    margin-right: 20px; 
+    border-radius: 10px; 
+}
+
+.cuadro .texto {
+    color: #333; 
+    font-family: Arial, sans-serif; 
+}
+
+.cuadro .texto h2 {
+    margin: 0 0 10px 0; /
+}
+
+.cuadro .texto p {
+    margin: 0; 
+    font-size: 20px;
+}
+.cuadrok {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: #3c372f;
+    border: 2px solid #3c3531;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 1000px;
+    gap: 20px;
+    font-family: Monaco, monospace;
+ }
+
+ .cuadrok img {
+    max-width: 250px;
+    border-radius: 10px;
+    
+ }
+
+ .cuadrok-texto {
+    flex: 1;
+ }
+
+ .cuadrok h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+ }
+
+ .cuadrok p {
+    margin: 0;
+ }

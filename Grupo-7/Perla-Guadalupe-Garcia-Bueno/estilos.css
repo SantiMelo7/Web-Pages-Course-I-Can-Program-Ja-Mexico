@@ -1,0 +1,169 @@
+
+  
+body {
+    font-family: serif, sans-serif;
+    background-color: #faf7b4;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible; 
+    background-color: #68f1bb;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropbtn:hover .dropbtn {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.PiePagina {
+    background-color: #68f1bb;
+    color: white;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: middle;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+/***************************************************************************************************************/
+/* Nuevo estilo para el cuadro uwu */
+.cuadro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border: 2px solid #ccc;
+    padding: 50px; /* Aumentado el espacio entre el texto y el borde del cuadro */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    margin: 40px auto;
+    max-width: 1200px;
+    min-height: 800px; /* Aumentado el tamaño del cuadro */
+    font-family: "Arial", "Helvetica", sans-serif;
+}
+
+.cuadro .imagen {
+    width: 800px; /* Modificado para hacer la imagen más larga horizontalmente :v */
+    height: 500px; /* Esto mantiene la proporción de la imagen C: */
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.cuadro h8 {
+    font-size: 14px;
+    color: #333;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.nuevo-contenido {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.nuevo-texto {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+    text-align: justify;
+}
+
+.imagen-nueva {
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.subtitulo1 {
+    text-align: center; /* Centra el texto */
+    font-size: 24px; /* Ajusta el tamaño como subtítulo */
+    font-weight: bold; /* Negrita para destacar */
+    color: black; 
+    margin-top: 20px; /* Espaciado superior */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.subtitulo {
+    font-size: 24px; /* Ajusta el tamaño como subtítulo */
+    font-weight: bold; /* Negrita para destacar */
+    color: black; 
+    margin-top: 20px; /* Espaciado superior */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+img{
+   display: block;
+   margin: auto;
+}
+
+/* Agrego media queries para que mi pagina sea responsive*/
+@media (max-width: 768px) {
+    .cuadro {
+      padding: 10px;
+    }
+    .imagen {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cuadro {
+      padding: 5px;
+    }
+    .imagen {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+body {
+    margin: 0;
+    display: flex;
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parques Naturales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="horarios.html">Mejores Horarios</a></li>
+                <li><a href="comidas.html">Comidas</a></li>
+                <li><a href="comentarios.html">Comentarios</a></li>
+            </ul>
+        </nav>
+        <h1>Comentarios y Sugerencias</h1>
+    </header>
+
+    <main>
+        <section class="comentarios">
+            <form id="commentForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="thankYouMessage" style="display: none;">
+                ¡Gracias por tu comentario!
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

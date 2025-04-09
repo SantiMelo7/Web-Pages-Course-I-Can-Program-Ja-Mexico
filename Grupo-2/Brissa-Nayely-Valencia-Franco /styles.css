@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #9b59b6;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+
+#timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.event {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 250px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.event img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.event h2 {
+    font-size: 1.5rem;
+    color: #9b59b6;
+    margin-top: 10px;
+}
+
+
+.click-message {
+    font-size: 0.9rem;
+    color: #9b59b6;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+
+.description {
+    display: none;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold; 
+}
+
+/* Efecto cuando el mouse pasa por encima */
+.event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

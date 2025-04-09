@@ -1,0 +1,71 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Ventas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Mi Tienda</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+                <li><a href="javascript:void(0);" onclick="mostrarSeccion('productos')">Productos</a></li>
+                <li><a href="javascript:void(0);" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="seccion visible">
+        <div class="welcome-text">
+            <h2>Bienvenido a Mi Tienda Online</h2>
+            <p>¡Encuentra productos de alta calidad y a un precio accesible para todos!</p>
+        </div>
+    </section>
+
+    <section id="productos" class="seccion">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-lista">
+            <div class="producto">
+               <img src="playera.jpg" alt="Playera">
+                <h3>Playera</h3>
+                <p>$450.00</p>
+                <button class="btn">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="pantalon.jpg" alt="pantalon">
+                <h3>Pantalon</h3>
+                <p>$300.00</p>
+                <button class="btn">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="tenis.jpg" alt="tenis">
+                <h3>Tenis Adidas</h3>
+                <p>$1,500.00</p>
+                <button class="btn">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="seccion">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta? No dudes en escribirnos.</p>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            <textarea id="message" name="message" placeholder="Tu mensaje" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mi Tienda</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

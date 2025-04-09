@@ -1,0 +1,139 @@
+body {
+  background-image: url('img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #154360;
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  float: none;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropbtn:hover {
+  background-color: red;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.tabla {
+  display: block;
+  background: white;
+  width: 90%;
+  max-width: 1800px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px white;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.tabla1 {
+  background: #073b3e;
+  width: 100%;
+  max-width: 1500px;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0px 0px 20px white;
+  color: white;
+  overflow-x: auto;
+}
+
+.presetacion {
+  text-align: left;
+}
+
+.PiePagina {
+  font-size: small;
+  text-align: center;
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  .titulo {
+      font-size: 1.5rem;
+  }
+
+  .tabla {
+      width: 95%;
+      padding: 10px;
+  }
+
+  .tabla1 {
+      padding: 20px;
+  }
+
+  li a, .dropbtn {
+      padding: 10px 12px;
+      font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .titulo {
+      font-size: 1.2rem;
+  }
+
+  ul {
+      flex-direction: column;
+  }
+
+  li {
+      width: 100%;
+      text-align: center;
+  }
+
+  .tabla, .tabla1 {
+      width: 100%;
+      padding: 10px;
+  }
+}

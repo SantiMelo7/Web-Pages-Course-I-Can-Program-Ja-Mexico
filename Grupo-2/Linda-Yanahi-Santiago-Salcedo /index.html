@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Centro de Ayuda Urgente</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+    }
+    .hero {
+      background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('ayuda.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 48px;
+    }
+    .hero p {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+    .btn-primary {
+      background: #ffc107;
+      color: black;
+      padding: 12px 25px;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 32px;
+      color: #222;
+    }
+    .section p {
+      max-width: 800px;
+      margin: 20px auto;
+      font-size: 18px;
+    }
+    .form-container {
+      background: white;
+      padding: 40px;
+      max-width: 600px;
+      margin: 40px auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    button {
+      background: #28a745;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .map-container {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+      border-radius: 10px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .floating-btn {
+      position: fixed;
+      right: 20px;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 20px;
+      color: white;
+      border: none;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .panic-button {
+      bottom: 120px;
+      background: red;
+    }
+    .whatsapp-float {
+      bottom: 60px;
+      background-color: #25D366;
+    }
+    .call-button {
+      bottom: 180px;
+      background-color: #007bff;
+    }
+    .email-button {
+      bottom: 240px;
+      background-color: #6f42c1;
+    }
+    .floating-btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>AYUDA INMEDIATA PARA QUIENES LO NECESITAN</h1>
+    <p>Si estás en riesgo, no estás solo. Contáctanos ahora mismo.</p>
+    <a href="#formulario" class="btn-primary">Solicitar Ayuda</a>
+  </section>
+
+  <section class="section">
+    <h2>Bienvenido al Centro de Apoyo Humanitario</h2>
+    <p>Brindamos asistencia urgente a personas en situación de riesgo: violencia familiar, indigencia, trata, y más. Nuestro equipo está disponible 24/7 para ayudarte con refugio, atención médica, apoyo legal y emocional.</p>
+  </section>
+
+  <div id="formulario" class="form-container">
+    <h2>Formulario de Ayuda</h2>
+    <form action="mailto:contacto@ayudaurgente.org" method="POST" enctype="text/plain">
+      <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+      <input type="email" name="correo" placeholder="Correo electrónico" required>
+      <input type="tel" name="telefono" placeholder="Teléfono de contacto">
+      <textarea name="mensaje" rows="5" placeholder="Cuéntanos qué sucede..." required></textarea>
+      <button type="submit">Enviar solicitud</button>
+    </form>
+  </div>
+
+  <div class="map-container">
+    <h2>Encuéntranos</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799092407!2d-74.25986768764544!3d40.697670063224804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1234567890abcdef!2sCiudad%20Ejemplo!5e0!3m2!1ses-419!2smx!4v1614099588721!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <footer>
+    <p>📞 01-800-123-4567 | 📧 contacto@ayudaurgente.org</p>
+    <p>© 2025 Ayuda Urgente - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Botones flotantes -->
+  <button class="floating-btn panic-button" onclick="alert('Llamando al número de emergencia...')">🚨</button>
+  <a class="floating-btn whatsapp-float" href="https://wa.me/5215555555555?text=Necesito%20ayuda%20urgente" target="_blank">💬</a>
+  <a class="floating-btn call-button" href="tel:018001234567" title="Llamar ahora">📞</a>
+  <a class="floating-btn email-button" href="mailto:contacto@ayudaurgente.org" title="Enviar correo">📧</a>
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>PixelPlay</title>
+  <link rel="icon" href="gaming.ico" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #505853;
+      color: white;
+    }
+
+    header {
+      background-color: #406f52;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .sidebar {
+      width: 150px;
+      background-color: #619363;
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+      top: 60px;
+      left: 0;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #c7d5e0;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+
+    .main {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    .seccion-destacados img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .seccion-populares img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .opciones {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+	}
+
+    .ofertas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+	}
+    .juego {
+      background-color: #16202d;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .juego img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 8px;
+    }
+
+    .juego h3 {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .juego span {
+      color: #66c0f4;
+      font-weight: bold;
+
+ .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fade-in.hidden {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+.nav-link {
+  display: block;
+  padding: 8px 12px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #3d5a5a;
+}
+
+.nav-link.active {
+  background-color: #2a3f3f;
+  font-weight: bold;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>PixelPlay</strong></div>
+    <nav>
+      <a href="Test.html">Juegos</a>
+    </nav>
+  </header>
+
+  <div class="sidebar">
+    <h3>Explorar</h3>
+  <a href="#destacados" class="nav-link">Destacados</a>
+  <a href="#populares" class="nav-link">Populares</a>
+  </div>
+
+  <div class="main">
+    <section class="seccion-destacados">
+	<section id="destacados">
+      <img src="https://img.freepik.com/fotos-premium/nebulosa-verde-sobre-fondo-galaxia-negra_53876-148417.jpg" alt="El universo">
+      <h2>Destacados</h2>
+    </section>
+
+    <section class="ofertas">
+      <div class="juego">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1973530/header.jpg" alt="Limbus Company">
+        <h3>Limbus Company</h3>
+        <span>Gratis</span>
+      </div>
+      <div class="juego">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg" alt="Terraria">
+        <h3>Terraria</h3>
+        <span>$4.67</span>
+      </div>
+      <div class="juego">
+        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/550/header.jpg" alt="Left 4 Dead 2">
+        <h3>Left 4 Dead 2</h3>
+        <span>$3.34</span>
+      </div>
+      <div class="juego">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/440/header.jpg" alt="Team Fortress 2">
+        <h3>Team Fortress 2</h3>
+        <span>Gratis</span>
+      </div>
+    </section>
+  </div>
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+  <div class="main">
+    <section class="seccion-populares">
+	<section id="populares">
+<img src="Persona.png" alt="Persona">
+      <h2>Populares</h2>
+    </section>
+
+    <section class="opciones">
+      <div class="juego">
+        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/601150/capsule_616x353.jpg" alt="DMC5">
+        <h3>Devil May Cry 5</h3>
+        <span>4.49</span>
+      </div>
+      <div class="juego">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/374320/capsule_616x353.jpg" alt="Dark Souls">
+        <h3>Dark Souls</h3>
+        <span>$31.99</span>
+      </div>
+      <div class="juego">
+        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/242760/capsule_616x353.jpg" alt="The forest">
+        <h3>The Forest</h3>
+        <span>$10.49</span>
+      </div>
+      <div class="juego">
+        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/108600/capsule_616x353.jpg" alt="Project Zomboid">
+        <h3>Project Zomboid</h3>
+        <span>$10.49</span>
+      </div>
+    </section>
+    <section class="opciones">
+      <div class="juego">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/367520/header.jpg" alt="Hollow Knight">
+        <h3>Hollow Knight</h3>
+        <span>$4.99</span>
+      </div>
+      <div class="juego">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/204360/header.jpg" alt="Castle Crashers">
+        <h3>Castle Crashers</h3>
+        <span>$7.99</span>
+      </div>
+      <div class="juego">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3241660/header.jpg" alt="R.E.P.O">
+        <h3>R.E.P.O</h3>
+        <span>$5.79</span>
+      </div>
+      <div class="juego">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1229490/capsule_616x353.jpg" alt="Ultrakill">
+        <h3>Ultrakill</h3>
+        <span>$9.99</span>
+      </div>
+    </section>
+  </div>
+
+
+  <script>
+
+html {
+  scroll-behavior: smooth;
+}
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+      }
+    });
+  });
+
+    // Animación de aparecer y desaparecer (fade-in & fade-out)
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+      threshold: 0.2 // Se activa cuando el 20% de la sección es visible
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          entry.target.classList.remove('hidden');
+        } else {
+
+          entry.target.classList.add('hidden');
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      // Inicializamos las secciones con fade-out (desaparecerán al inicio)
+      fader.classList.add('fade-in');
+      appearOnScroll.observe(fader);
+    });
+  </script>
+
+</body>
+</html>

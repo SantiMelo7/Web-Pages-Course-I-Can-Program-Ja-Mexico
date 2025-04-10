@@ -1,0 +1,172 @@
+<html lang="es">
+<head>
+        <title>Curso de Guitarra</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+        }
+
+              .navbar {
+            background-color: #34495e; 
+            overflow: visible;             display: flex;
+            justify-content: left; 
+            padding: 15px 0;
+            width: 100%;
+        }
+
+              .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 30px;
+            font-size: 18px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+                .navbar a:hover {
+            background-color: #1abc9c;
+            border-radius: 5px;
+        }
+
+      
+        h1 {
+            font-size: 36px;
+            color: #2c3e50;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+
+        .registration-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            margin-top: 30px;
+        }
+
+        .registration-form input, .registration-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .registration-form input[type="submit"] {
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .registration-form input[type="submit"]:hover {
+            background-color: #16a085;
+        }
+
+        .registration-form label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+               .background-image {
+            background-image: url('https://www.example.com/imagen-de-guitarra.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="registro.html">Registro</a>
+            </div>
+
+    <h1>GUITAZUL</h1>
+
+    <div class="registration-form">
+        <h2>¡Es fácil empezar!</h2>
+        <form id="payment-form" action="procesar_pago.php" method="post">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono (opcional):</label>
+            <input type="text" id="telefono" name="telefono">
+
+            <label for="nivel">Nivel de experiencia:</label>
+            <select id="nivel" name="nivel" required>
+                <option value="principiante">Principiante</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="avanzado">Avanzado</option>
+            </select>
+
+            <div class="payment-method">
+                <label for="metodo_pago">Método de pago:</label><br>
+                <input type="radio" id="transferencia" name="metodo_pago" value="transferencia" required> Pago por Transferencia Bancaria<br>
+                <input type="radio" id="tarjeta" name="metodo_pago" value="tarjeta" required> Pago con tarjeta de crédito/débito<br>
+            </div>
+
+            <input type="submit" value="¡Regístrate y Paga!">
+        </form>
+    </div>
+
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <script>
+        const mp = new MercadoPago('YOUR_PUBLIC_KEY', {
+            locale: 'es-MX',
+        });
+
+        document.getElementById('payment-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            let metodoPago = document.querySelector('input[name="metodo_pago"]:checked').value;
+            if (metodoPago === "transferencia") {
+                alert("Redirigiendo al pago por transferencia bancaria...");
+            } else if (metodoPago === "tarjeta") {
+                alert("Redirigiendo a pago con tarjeta...");
+            }
+        });
+    </script>
+
+</body>
+</html>

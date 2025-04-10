@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Descarga - Resettss</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://images.unsplash.com/photo-1600891963935-c3d57bc98f94'); /* Cambia esta URL si quieres otra imagen */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #f5f5f5;
+    }
+    .overlay {
+      background-color: rgba(28, 28, 28, 0.85);
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+    header {
+      background-color: #ff6600;
+      color: #1c1c1c;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #ff8533;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    a.download-btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background-color: #ff6600;
+      color: #1c1c1c;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    a.download-btn:hover {
+      background-color: #e65c00;
+    }
+    form {
+      max-width: 400px;
+      margin: 30px auto 0;
+      text-align: left;
+      background-color: rgba(42, 42, 42, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #ff8533;
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 4px;
+      background-color: #3a3a3a;
+      color: white;
+    }
+    input[type="submit"] {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #ff6600;
+      border: none;
+      border-radius: 6px;
+      color: #1c1c1c;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #e65c00;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <h1>Descarga Resettss</h1>
+    </header>
+
+    <main>
+      <h2>¡Obtén la aplicación!</h2>
+      <p>Esta aplicación se destaca por lo fácil que es aprender de ella sin importar que seas un cocinero experimentado o no. Te llevarás un buen aprendizaje
+      y encontrarás exactamente lo que necesitas para preparar tus platillos favoritos.
+</p>
+      <a href="#" class="download-btn">Descargar Resettss</a>
+
+      <h2>¿Quieres que te contactemos?</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <input type="submit" value="Enviar datos">
+      </form>
+    </main>
+  </div>
+</body>
+</html>

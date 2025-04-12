@@ -1,0 +1,42 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f1f1;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-title {
+    font-weight: bold;
+    color: #34495e;
+}
+
+.card-text {
+    color: #16a085;
+    font-size: 1.2em;
+}
+
+form label {
+    font-weight: 600;
+}
+
+form input {
+    border-radius: 8px;
+}
+
+button {
+    border-radius: 8px;
+}

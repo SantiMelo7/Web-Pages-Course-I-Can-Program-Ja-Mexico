@@ -1,0 +1,5 @@
+export const Hola = 'Hello'
+export const Hola1 = 'Hello'
+export const Hola2 = 'Hello'
+export const Hola3 = 'Hello'
+export const Hola4 = 'Hello'
